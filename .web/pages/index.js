@@ -1,10 +1,10 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Box, Button, Center, Heading, HStack, Image as ChakraImage, Link, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, Flex, Heading, HStack, Image as ChakraImage, Link, Spacer, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
-import { ArrowForwardIcon } from "@chakra-ui/icons"
+import { ArrowForwardIcon, LinkIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
 
 
@@ -22,23 +22,53 @@ export default function Component() {
 </HStack>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em"}}>
-  <VStack alignItems={`start`}>
-  <HStack>
+  <VStack alignItems={`start`} spacing={`2em`}>
+  <HStack spacing={`1em`}>
   <Avatar name={`Adam Power`} size={`xl`}/>
-  <VStack alignItems={`start`} sx={{"linkIcon": "https://x.com/MrPower64165231"}}>
+  <VStack alignItems={`start`}>
   <Heading size={`lg`}>
   {`Adam Power`}
 </Heading>
   <Text sx={{"marginTop": "0px  !important"}}>
   {`@mr___power`}
 </Text>
+  <HStack>
+  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
+  <LinkIcon/>
+</Link>
+  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
+  <LinkIcon/>
+</Link>
+</HStack>
 </VStack>
 </HStack>
+  <Flex sx={{"width": "100%"}}>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeigh": "bold", "color": "blue"}}>
+  {`+2 `}
+</Text>
+  {`años de experiencia`}
+</Box>
+  <Spacer/>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeigh": "bold", "color": "blue"}}>
+  {`+2 `}
+</Text>
+  {`años de experiencia`}
+</Box>
+  <Spacer/>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeigh": "bold", "color": "blue"}}>
+  {`+2 `}
+</Text>
+  {`años de experiencia`}
+</Box>
+</Flex>
   <Text>
   {`Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! `}
 </Text>
 </VStack>
-  <VStack sx={{"width": "100%"}}>
+  <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
   <Heading size={`lg`} sx={{"width": "100%", "paddingTop": "1em"}}>
   {`Comunidad`}
 </Heading>
@@ -168,12 +198,12 @@ export default function Component() {
 </VStack>
 </VStack>
 </Center>
-  <VStack>
+  <VStack sx={{"marginBottom": "2em"}}>
   <ChakraImage src={`favicon.ico`}/>
-  <Link as={NextLink} href={`https://mrpower.portfoliobox.net/`} isExternal={true} sx={{"textDecoration": "none", "_hover": {}}}>
-  {`2020-2023 Mr. Power by Adam Power`}
+  <Link as={NextLink} href={`https://mrpower.portfoliobox.net/`} isExternal={true} sx={{"fontSize": "0.8em", "textDecoration": "none", "_hover": {}}}>
+  {`2020-2024 Mr. Power by Adam Power`}
 </Link>
-  <Text>
+  <Text sx={{"marginTop": "0px  !important", "fontSize": "0.8em"}}>
   {` building web pages from Burgos to the world`}
 </Text>
 </VStack>
