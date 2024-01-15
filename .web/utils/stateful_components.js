@@ -1,5 +1,7 @@
+/** @jsxImportSource @emotion/react */
 
-/** @jsxImportSource @emotion/react */import { Fragment, useContext } from "react"
+
+import { Fragment, useContext } from "react"
 import { EventLoopContext } from "/utils/context"
 import { Event, isTrue } from "/utils/state"
 import { Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text } from "@chakra-ui/react"
