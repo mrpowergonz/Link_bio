@@ -26,6 +26,9 @@ class Size(Enum):
     BIG= "2em"
     VERY_BIG="4em"
 
+
+
+
 #styles
 #Para que todos los botones de la aplicacion tengan este estilo    
 BASE_STYLE = {
@@ -52,7 +55,16 @@ BASE_STYLE = {
         "text-decoration": "none",
         "_hover": {}
     }
+    
 }
+
+
+    
+
+tech_style= dict(
+    width="200%",
+    padding_top=Size.DEFAULT.value,
+)
 
 navbar_title_style = dict(
     font_family= font.LOGO.value,

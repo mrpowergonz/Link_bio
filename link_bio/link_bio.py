@@ -3,6 +3,7 @@ from link_bio.components.navbar import navbar #importamos el navbar
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.views.tech.tech import tech
+
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles #as para importalo con un alias
 from link_bio.styles.styles import Size as Size
@@ -28,6 +29,8 @@ def index() -> rx.Component:
         ),
          footer()
     )
+
+
 
 #Le paso el estilo a la aplicacion
 app = rx.App(

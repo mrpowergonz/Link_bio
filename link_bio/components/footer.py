@@ -7,7 +7,7 @@ from link_bio.styles.fonts import font
 def footer()-> rx.Component:
     return rx.vstack(
         rx.image(
-            src="logo.png",
+            src="logo.png",  #Poner logo blanco
             height=Size.VERY_BIG.value,
             ),
         rx.link(f"2020-{datetime.date.today().year} Mr. Power by Adam Power",
