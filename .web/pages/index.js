@@ -183,67 +183,67 @@ export default function Component() {
   <HStack>
   <VStack>
   <Link as={NextLink} href={`https://www.javascript.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`javascript.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`javascript.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`JAVASCRIPT`}
 </Text>
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://www.python.org/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`python.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`python.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`PYTHON`}
 </Text>
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://reactjs.org/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`react.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`react.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`REACTJS`}
 </Text>
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://nodejs.org/en/about`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`node.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`node.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "4em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}>
   {`NODEJS`}
 </Text>
 </VStack>
 </HStack>
-  <HStack alignItems={`start`} spacing={`0.8em`} sx={{"width": "50%", "borderRadius": "3px", "borderColor": "white"}}>
+  <HStack alignItems={`start`} spacing={`1.5em`}>
   <VStack>
   <Link as={NextLink} href={`https://www.djangoproject.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`django.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`django.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`DJANGO`}
 </Text>
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://git-scm.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`git.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`git.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`GIT`}
 </Text>
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://github.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`github_white.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`github_white.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`GITHUB`}
 </Text>
 </VStack>
-  <VStack spacing={`1em`}>
+  <VStack>
   <Link as={NextLink} href={`https://tailwindcss.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`tailwind_css.png`} sx={{"heigh": "4em"}}/>
+  <ChakraImage src={`tailwind.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
-  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center"}}>
+  <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`TAILWIND`}
 </Text>
 </VStack>

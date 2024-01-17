@@ -24,10 +24,14 @@ def tech() -> rx.Component:
                 
                 rx.text(
                     "JAVASCRIPT",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
             rx.vstack(
@@ -37,10 +41,14 @@ def tech() -> rx.Component:
                 ),
                 rx.text(
                     "PYTHON",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
 
@@ -51,10 +59,14 @@ def tech() -> rx.Component:
                 ),
                 rx.text(
                     "REACTJS",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
 
@@ -62,15 +74,22 @@ def tech() -> rx.Component:
                 link_tech(
                     "node.png",
                     const.NODEJS_URL,
+                    
                 ),
                 rx.text(
                     "NODEJS",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.VERY_BIG.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.15)",
+                },
                 ),
+            
             ),
+            
         ),
 
         rx.hstack(
@@ -81,10 +100,14 @@ def tech() -> rx.Component:
                 ),
                 rx.text(
                     "DJANGO",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
 
@@ -95,10 +118,14 @@ def tech() -> rx.Component:
                 ),
                 rx.text(
                     "GIT",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
 
@@ -109,31 +136,38 @@ def tech() -> rx.Component:
                 ),
                 rx.text(
                     "GITHUB",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center", 
+                    _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
             ),
 
             rx.vstack(
                 link_tech(
-                    "tailwind_css.png",
+                    "tailwind.png",
                     const.TAILWIND_CSS_URL,
                 ),
                 rx.text(
                     "TAILWIND",
-                    margin_top=Size.ZERO.value,
+                    margin_top=Size.MEDIUM.value,
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,
-                    align_self="center",  # Adjusted alignment
+                    align_self="center",
+                     _hover={
+                    "cursor": "pointer",
+                    "transform": "scale(1.05)",
+                },
                 ),
-                spacing=Size.DEFAULT.value
+                
             ),
-            width="50%",
+            
             align_items="start",
-            border_radius="3px",
-            border_color="white",
-            spacing=Size.MEDIUM.value
+            
+            spacing=Size.LARGE.value
         )
     )
