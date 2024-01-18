@@ -37,4 +37,9 @@ app = rx.App(
     stylesheets=styles.STYLESHEETS, #Pasarle los fonts
     style=styles.BASE_STYLE,
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title="Mr Power | pagina principal de mi portfolio",
+    description="Hola, mi nombre es Adam Power. Soy desarrollador freeelance y esta es mi pagina con mis links, contactos y proyectos",
+    image="logo.png"
+    )

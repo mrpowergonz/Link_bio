@@ -5,8 +5,7 @@ import link_bio.constants as const
 from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import text_color as Textcolor
 from link_bio.styles.fonts import font
-from link_bio.styles.colors import Color as color
-import link_bio.styles.styles as styles
+
 
 
 

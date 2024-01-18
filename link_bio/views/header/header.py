@@ -5,6 +5,8 @@ from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import text_color as Textcolor
 from link_bio.styles.fonts import font
 from link_bio.styles.colors import Color as Color
+import link_bio.constants as const
+import link_bio.styles.styles as styles
 
 def header()-> rx.Component:
         return rx.vstack(
@@ -23,7 +25,7 @@ def header()-> rx.Component:
                 ),
                 rx.vstack(
                         rx.heading(
-                                "Adam Power", 
+                                "Adam Power Gonzalez", 
                                 size="lg",
                                 color=Textcolor.HEADER.value,
                                 font_family= font.TITLE.value,
@@ -36,14 +38,47 @@ def header()-> rx.Component:
                                 
                         ),
                         rx.hstack(
-                        link_icon("https://github.com/mrpowergonz"),
-                        link_icon("https://github.com/mrpowergonz"),
+                                link_icon(
+                                        "icons/x.svg",
+                                        const.TWITTER_X_URL,
+                                        
+                                  ),
+                        link_icon(
+                                "icons/instagram.svg",
+                                const.INSTAGRAM_URL,
+                                
+                                  ),
+
+                        link_icon(
+                                "icons/github.svg",
+                                const.GITHUB_URL,
+                                
+
+                                ),
+
+                        link_icon(
+                                "icons/youtube.svg",
+                                const.YOUTUBE_URL,
+                                
+                                ),
+                        link_icon(
+                                "icons/linkedin.svg",
+                                const.LINKEDIN_URL,
+                                 
+                                 ),
+                        link_icon(
+                                "icons/envelope.svg",
+                                const.EMAIL,
+                                
+                                ),
+                                spacing=Size.DEFAULT.value,
+                                
                         ),
                         align_items="start" ,
                         
                       
                 ),
-                spacing=Size.DEFAULT.value,
+                
         ),
 
 

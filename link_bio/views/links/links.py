@@ -9,27 +9,34 @@ def links()-> rx.Component:
         title("Comunidad"),
         link_button("Github",
                     "Proyectos personales" ,
-                    const.GITHUB_URL
+                    "icons/github.svg",
+                    const.GITHUB_URL,
                     ),
 
         link_button("Youtube",
                     "Mis proyectos de videos",
-                    const.YOUTUBE_URL
+                    "icons/youtube.svg",
+                    const.YOUTUBE_URL,                 
                     ),
 
         link_button("twitter", 
                     "Red social" ,
-                    const.TWITTER_X_URL
+                    "icons/x.svg",
+                    const.TWITTER_X_URL,
                     ),
 
         link_button("Instagram",
-                    "Red social", 
-                    const.INSTAGRAM_URL
+                    "Red social",
+                    "icons/instagram.svg", 
+                    const.INSTAGRAM_URL,
+                    
                     
         ),
         link_button("Linkedin",
                     "Red social contacto",
-                    const.LINKEDIN_URL 
+                    "icons/linkedin.svg",
+                    const.LINKEDIN_URL ,
+            
                     
         ),
         
@@ -37,8 +44,11 @@ def links()-> rx.Component:
         title("Contacto"),
         link_button("Email",
                     const.EMAIL,
+                    "icons/envelope.svg",
                     f"mailto:{const.EMAIL}"
+                    
                     ),
         width = "100%",
         spacing=Size.MEDIUM.value,
+        
     )

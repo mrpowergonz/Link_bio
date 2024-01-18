@@ -6,7 +6,6 @@ import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_compo
 import { Avatar, Box, Button, Center, Flex, Heading, HStack, Image as ChakraImage, Link, Spacer, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
-import { ArrowForwardIcon, LinkIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
 
 
@@ -33,21 +32,33 @@ export default function Component() {
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
   <VStack alignItems={`start`} spacing={`2em`}>
-  <HStack spacing={`1em`}>
+  <HStack>
   <Avatar name={`Adam Power`} size={`xl`} src={`logo.png`} sx={{"color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
   <VStack alignItems={`start`}>
   <Heading size={`lg`} sx={{"color": "#F1F2F4", "fontFamily": "Poppins"}}>
-  {`Adam Power`}
+  {`Adam Power Gonzalez`}
 </Heading>
   <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`@mr___power`}
 </Text>
-  <HStack>
-  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <LinkIcon/>
+  <HStack spacing={`1em`}>
+  <Link as={NextLink} href={`https://twitter.com/MrPower64165231`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/x.svg`} sx={{"width": "1em"}}/>
 </Link>
-  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <LinkIcon/>
+  <Link as={NextLink} href={`https://www.instagram.com/mr___power/?hl=en`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/instagram.svg`} sx={{"width": "1em"}}/>
+</Link>
+  <Link as={NextLink} href={`https://github.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/github.svg`} sx={{"width": "1em"}}/>
+</Link>
+  <Link as={NextLink} href={`https://www.youtube.com/channel/UCBOEjk6rJ67ruecmdC5nisQ`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/youtube.svg`} sx={{"width": "1em"}}/>
+</Link>
+  <Link as={NextLink} href={`https://www.linkedin.com/in/adam-power-gonzalez-47308b1b8/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/linkedin.svg`} sx={{"width": "1em"}}/>
+</Link>
+  <Link as={NextLink} href={`adampg74@gmail.com`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
+  <ChakraImage src={`icons/envelope.svg`} sx={{"width": "1em"}}/>
 </Link>
 </HStack>
 </VStack>
@@ -83,10 +94,10 @@ export default function Component() {
   {`Comunidad`}
 </Heading>
   <Link as={NextLink} href={`https://github.com/`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/github.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`Github`}
 </Text>
@@ -98,10 +109,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.youtube.com/channel/UCBOEjk6rJ67ruecmdC5nisQ`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/youtube.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`Youtube`}
 </Text>
@@ -113,10 +124,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://twitter.com/MrPower64165231`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/x.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`twitter`}
 </Text>
@@ -128,10 +139,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.instagram.com/mr___power/?hl=en`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/instagram.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`Instagram`}
 </Text>
@@ -143,10 +154,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://www.linkedin.com/in/adam-power-gonzalez-47308b1b8/`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/linkedin.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`Linkedin`}
 </Text>
@@ -161,10 +172,10 @@ export default function Component() {
   {`Contacto`}
 </Heading>
   <Link as={NextLink} href={`mailto:adampg74@gmail.com`} isExternal={true} sx={{"width": "100%", "text-decoration": "none", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4"}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "1em", "color": "#F1F2F4", "backgroundColor": "#171F26", "fontFamily": "Poppins", "_hover": {"backgroundColor": "#087ec4", "cursor": "pointer", "transform": "scale(1.05)"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
-  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <ChakraImage src={`icons/envelope.svg`} sx={{"width": "1.5em", "height": "1.5em", "margin": "1.5em"}}/>
+  <VStack alignItems={`start`} spacing={`0px !important`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontFamily": "Poppins", "fontSize": "1em", "color": "#F1F2F4", "size": "lg"}}>
   {`Email`}
 </Text>
@@ -183,7 +194,7 @@ export default function Component() {
   <HStack>
   <VStack>
   <Link as={NextLink} href={`https://www.javascript.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`javascript.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`javascript.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`JAVASCRIPT`}
@@ -191,7 +202,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://www.python.org/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`python.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`python.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`PYTHON`}
@@ -199,7 +210,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://reactjs.org/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`react.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`react.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`REACTJS`}
@@ -207,7 +218,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://nodejs.org/en/about`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`node.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`node.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "4em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}>
   {`NODEJS`}
@@ -217,7 +228,7 @@ export default function Component() {
   <HStack alignItems={`start`} spacing={`1.5em`}>
   <VStack>
   <Link as={NextLink} href={`https://www.djangoproject.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`django.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`django.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`DJANGO`}
@@ -225,7 +236,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://git-scm.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`git.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`git.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`GIT`}
@@ -233,7 +244,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://github.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`github_white.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`github_white.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`GITHUB`}
@@ -241,7 +252,7 @@ export default function Component() {
 </VStack>
   <VStack>
   <Link as={NextLink} href={`https://tailwindcss.com/`} isExternal={true} sx={{"text-decoration": "none", "_hover": {}}}>
-  <ChakraImage src={`tailwind.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "borderRadius": "0.375rem", "transition": "0.2s", "boxShadow": "9px rgba(84, 82, 95, 0.14)", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
+  <ChakraImage src={`tailwind.png`} sx={{"heigh": "2em", "width": "150px", "marginButton": "18px", "transition": "0.2s", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}}}/>
 </Link>
   <Text sx={{"marginTop": "0.8em", "color": "#C3C7CB", "fontFamily": "Poppins", "alignSelf": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`TAILWIND`}
@@ -263,10 +274,10 @@ export default function Component() {
 </Box>
   <NextHead>
   <title>
-  {`Reflex App`}
+  {`Mr Power | pagina principal de mi portfolio`}
 </title>
-  <meta content={`A Reflex app.`} name={`description`}/>
-  <meta content={`favicon.ico`} property={`og:image`}/>
+  <meta content={`Hola, mi nombre es Adam Power. Soy desarrollador freeelance y esta es mi pagina con mis links, contactos y proyectos`} name={`description`}/>
+  <meta content={`logo.png`} property={`og:image`}/>
 </NextHead>
 </Fragment>
   )

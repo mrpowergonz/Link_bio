@@ -47,9 +47,13 @@ BASE_STYLE = {
         "font_family": font.DEFAULT.value,
         "_hover": {
             "background_color": Color.SECONDARY.value,
+            "cursor": "pointer",
+            "transform": "scale(1.05)",
+           
+        },
 
-        }
     },
+    
     #Para eliminar el subrayado de los botones
     rx.Link: {
         "text-decoration": "none",
@@ -60,7 +64,6 @@ BASE_STYLE = {
 
 
     
-
 tech_style= dict(
     width="200%",
     padding_top=Size.DEFAULT.value,
