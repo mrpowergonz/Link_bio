@@ -22,3 +22,8 @@ NODEJS_URL="https://nodejs.org/en/about"
 REFLEX_URL="https://reflex.dev/"
 GITHUB_URL="https://github.com/"
 GIT_URL="https://git-scm.com/"
+
+
+#cards
+
+IMAGE_URL="https://github.com/mrpowergonz/to-do-app-DJANGO/tree/main/todo"

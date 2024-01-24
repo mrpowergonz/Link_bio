@@ -70,7 +70,25 @@ BASE_STYLE = {
     
 }
 
+style_card = dict (
+    align_items= "center",
+    text_align= "center",
+    background = "#000c16",
+    padding="0em",
+    border_radius="2em", 
+    box_shadow = "0 0 20px #2777bb",
+    margin="50px",    
+    _hover={"transform": "scale(1)","box_shadow": "0 0 7px #f9cd45","transition": "all 0.3s ease-in-out", "transform": "translateY(-10px)"},
+    width=["9em","15emem","15em","15em","15em"],
+    height=["8em","13em","13em","13em","13em"],
+    direction="column",
+    align="stretch",
+    justify="center",
+   
+)
 
+title_card ={
+    "background": "linear-gradient(to right, #e1e1e1, #f9cd45)","background_clip": "text",}
     
 tech_style= dict(
     width="200%",

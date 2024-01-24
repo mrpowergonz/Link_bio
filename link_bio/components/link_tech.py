@@ -8,7 +8,7 @@ def link_tech(imagen: str, url: str ,alt: str)-> rx.Component:
             heigh=size.BIG.value,
             src=imagen,
             width="150px",
-            margin_button="18px",
+            margin_bottom="10px",
            
              _hover={
             "cursor": "pointer",
@@ -16,6 +16,7 @@ def link_tech(imagen: str, url: str ,alt: str)-> rx.Component:
            
             },
         ),
+        
       
         href=url,
         is_external=True
