@@ -14,7 +14,7 @@ def header()-> rx.Component:
             rx.hstack(
                 rx.avatar(
                         name="Adam Power",
-                        size="xl",
+                        size="2xl",
                         src="logo.png",
                         color=Textcolor.BODY.value,
                         bg=Color.BACKGROUND2.value,
@@ -38,43 +38,46 @@ def header()-> rx.Component:
                                 
                         ),
                         rx.hstack(
-                                link_icon(
-                                        "icons/x.svg",
-                                        const.TWITTER_X_URL,
-                                        
+                        link_icon(
+                                "icons/music.svg",
+                                const.MUSIC_URL,
+                                "Musica tranquila"                                        
                                   ),
+
                         link_icon(
                                 "icons/instagram.svg",
                                 const.INSTAGRAM_URL,
-                                
+                                "Instagram"
                                   ),
 
                         link_icon(
                                 "icons/github.svg",
                                 const.GITHUB_URL,
-                                
+                                "Github"
 
                                 ),
 
                         link_icon(
                                 "icons/youtube.svg",
                                 const.YOUTUBE_URL,
-                                
+                                "Youtube"
                                 ),
                         link_icon(
                                 "icons/linkedin.svg",
                                 const.LINKEDIN_URL,
-                                 
+                                 "Linkedin"
                                  ),
                         link_icon(
                                 "icons/envelope.svg",
                                 const.EMAIL,
-                                
+                                "Email"
                                 ),
-                                spacing=Size.DEFAULT.value,
                                 
+                               
                         ),
                         align_items="start" ,
+                        
+                        spacing=Size.MEDIUM.value,
                         
                       
                 ),
@@ -83,11 +86,9 @@ def header()-> rx.Component:
 
 
         rx.flex(
-                    info_text("+2 " , "años de experiencia"),
+                    info_text("+2 " , "años de experiencia programando"),
                     rx.spacer(),
-                    info_text("+2 " , "años de experiencia"),
-                    rx.spacer(),
-                    info_text("+2 " , "años de experiencia"),
+                    info_text("+10 " , "años de experiencia fotografiando"),
                     width="100%",
                     font_family= font.DEFAULT.value,
         ),

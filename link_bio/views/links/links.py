@@ -6,7 +6,7 @@ import link_bio.constants as const
 
 def links()-> rx.Component:
     return rx.vstack(
-        title("Comunidad"),
+        title("Links de interés"),
         link_button("Github",
                     "Proyectos personales" ,
                     "icons/github.svg",
@@ -19,10 +19,16 @@ def links()-> rx.Component:
                     const.YOUTUBE_URL,                 
                     ),
 
-        link_button("twitter", 
-                    "Red social" ,
-                    "icons/x.svg",
-                    const.TWITTER_X_URL,
+        link_button("Musica", 
+                    "Musica tranquila para programar" ,
+                    "icons/music.svg",
+                    const.MUSIC_URL,
+                    ),
+
+        link_button("Foto y video",
+                    "Portfolio de foto y video",
+                    "icons/foto.svg", 
+                    const.FOTO_URL,
                     ),
 
         link_button("Instagram",
@@ -52,3 +58,4 @@ def links()-> rx.Component:
         spacing=Size.MEDIUM.value,
         
     )
+

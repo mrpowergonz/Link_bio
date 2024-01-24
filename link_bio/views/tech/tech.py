@@ -11,13 +11,14 @@ from link_bio.styles.fonts import font
 
 def tech() -> rx.Component:
     return rx.vstack(
-        title("Tecnologias"),
+        title("Tecnologias",),
         rx.hstack(
             rx.vstack(
                 
                     link_tech(
                         "javascript.png",
                         const.JAVASCRIPT_URL,
+                        alt="Logotipo Javascript",
                         
                     ),
                 
@@ -37,6 +38,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "python.png",
                     const.PYTHON_URL,
+                    alt="Python logotipo",
                 ),
                 rx.text(
                     "PYTHON",
@@ -55,6 +57,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "react.png",
                     const.REACTJS_URL,
+                    alt="Logotipo React"
                 ),
                 rx.text(
                     "REACTJS",
@@ -73,6 +76,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "node.png",
                     const.NODEJS_URL,
+                    alt="logotipo Node"
                     
                 ),
                 rx.text(
@@ -96,6 +100,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "django.png",
                     const.DJANGO_URL,
+                    alt="Logotipo Django"
                 ),
                 rx.text(
                     "DJANGO",
@@ -114,6 +119,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "git.png",
                     const.GIT_URL,
+                    alt="Logotipo Git"
                 ),
                 rx.text(
                     "GIT",
@@ -132,6 +138,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "github_white.png",
                     const.GITHUB_URL,
+                    "Logotipo Github"
                 ),
                 rx.text(
                     "GITHUB",
@@ -150,6 +157,7 @@ def tech() -> rx.Component:
                 link_tech(
                     "tailwind.png",
                     const.TAILWIND_CSS_URL,
+                    alt="Logotipo Tailwind"
                 ),
                 rx.text(
                     "TAILWIND",
@@ -167,6 +175,6 @@ def tech() -> rx.Component:
             
             align_items="start",
             
-            spacing=Size.LARGE.value
+            spacing=Size.DEFAULT.value
         )
     )

@@ -2,7 +2,7 @@ import reflex as rx
 from enum import Enum
 from .colors import Color as Color
 from .colors import text_color as Textcolor
-from .fonts import font
+from .fonts import font , FontWeight
 
 
 #Constantes
@@ -33,18 +33,26 @@ class Size(Enum):
 #Para que todos los botones de la aplicacion tengan este estilo    
 BASE_STYLE = {
     "font_family": font.DEFAULT.value,  # Set font family globally
+    "font_weight":  FontWeight.LIGHT.value,
     
     "background_color": Color.BACKGROUND.value + "!important",
+
+    rx.Heading: {
+        "color" : Textcolor.HEADER.value,
+        "font_weight":  FontWeight.MEDIUM.value,
+        "font_family" : font.DEFAULT.value,
+    },
 
     rx.Button:{
         "width": "100%",
         "height": "100%",
-        "display":"block",
         "padding": Size.SMALL.value ,
         "border_radius": Size.DEFAULT.value,
         "color": Textcolor.HEADER.value,
         "background_color": Color.CONTENT.value,
         "font_family": font.DEFAULT.value,
+        "white_space" : "normal",
+        "text_align" : "start",
         "_hover": {
             "background_color": Color.SECONDARY.value,
             "cursor": "pointer",
@@ -72,6 +80,7 @@ tech_style= dict(
 navbar_title_style = dict(
     font_family= font.LOGO.value,
     font_size=Size.LARGE.value,
+    font_weight=  FontWeight.MEDIUM.value,
     
 )
 
@@ -86,13 +95,16 @@ button_title_style = dict(
     font_family= font.TITLE.value,
     font_size = Size.DEFAULT.value,
     color = Textcolor.HEADER.value,
-    size="lg"
+    size="lg",
+    font_weight= FontWeight.MEDIUM.value,
 )
 
 button_body_style = dict(
     font_family= font.DEFAULT.value,
     font_size = Size.MEDIUM.value,
     color = Textcolor.BODY.value,
+    font_weight=  FontWeight.MEDIUM.value,
+
 )
 
 

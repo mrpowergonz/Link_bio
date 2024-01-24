@@ -41,5 +41,9 @@ app.add_page(
     index,
     title="Mr Power | pagina principal de mi portfolio",
     description="Hola, mi nombre es Adam Power. Soy desarrollador freeelance y esta es mi pagina con mis links, contactos y proyectos",
-    image="logo.png"
+    image="LOGO.ico",
+    meta=[
+        {"name":"og:type", "content": "website"},
+     
+    ]
     )
