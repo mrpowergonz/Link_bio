@@ -25,6 +25,7 @@ class Size(Enum):
     LARGE= "1.5em"
     BIG= "2em"
     VERY_BIG="4em"
+    SUPER_BIG="8em"
 
 
 
@@ -77,19 +78,21 @@ style_card = dict (
     padding="0em",
     border_radius="2em", 
     box_shadow = "0 0 20px #2777bb",
-    margin="50px",    
+    margin="9em",    
     _hover={"transform": "scale(1)","box_shadow": "0 0 7px #f9cd45","transition": "all 0.3s ease-in-out", "transform": "translateY(-10px)"},
     width=["9em","15emem","15em","15em","15em"],
-    height=["8em","13em","13em","13em","13em"],
+    height=["13em","18em","18em","18em","18em"],
     direction="column",
     align="stretch",
     justify="center",
    
 )
 
-title_card ={
-    "background": "linear-gradient(to right, #e1e1e1, #f9cd45)","background_clip": "text",}
-    
+title_card_style =dict(
+{
+    "background": "linear-gradient(to right, #e1e1e1, #f9cd45)","background_clip": "text",},
+)
+
 tech_style= dict(
     width="200%",
     padding_top=Size.DEFAULT.value,
