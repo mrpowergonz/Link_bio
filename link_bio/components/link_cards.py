@@ -39,10 +39,10 @@ def link_cards() -> rx.Component:
         justify_content="center",
         width="100%",
         href="https://mrpower.portfoliobox.net/",
+
+
+        
         
     )
 
-def proyects_cards() -> rx.Component:
-    return rx.responsive_grid(
-        link_cards("django.png")),
-      
+

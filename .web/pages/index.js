@@ -33,7 +33,7 @@ export default function Component() {
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
   <VStack alignItems={`start`} spacing={`2em`}>
   <HStack>
-  <Avatar name={`Adam Power`} size={`2xl`} src={`logo.png`} sx={{"color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
+  <Avatar name={`Adam Power`} size={`2xl`} src={`lego.jpg`} sx={{"width": "30%", "height": "20%", "color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
   <VStack alignItems={`start`} spacing={`0.8em`}>
   <Heading size={`lg`} sx={{"color": "#F1F2F4", "fontFamily": "Poppins", "fontWeight": "500"}}>
   {`Adam Power Gonzalez`}

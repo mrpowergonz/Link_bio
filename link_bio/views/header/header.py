@@ -15,7 +15,9 @@ def header()-> rx.Component:
                 rx.avatar(
                         name="Adam Power",
                         size="2xl",
-                        src="logo.png",
+                        width="30%",
+                        height="20%",
+                        src="lego.jpg",
                         color=Textcolor.BODY.value,
                         bg=Color.BACKGROUND2.value,
                         padding="2px",
