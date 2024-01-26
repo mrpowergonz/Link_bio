@@ -31,10 +31,18 @@ export default function Component() {
 </HStack>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
-  <VStack alignItems={`start`} spacing={`2em`}>
+  <VStack alignItems={`start`} spacing={`1em`}>
   <HStack>
-  <Avatar name={`Adam Power`} size={`2xl`} src={`lego.jpg`} sx={{"width": "30%", "height": "20%", "color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
-  <VStack alignItems={`start`} spacing={`0.8em`}>
+  <Flex sx={{"alignItems": "center", "width": "100%", "height": "100%"}}>
+  <Box sx={{"alignItems": "start", "width": "50%", "height": "100%"}}>
+  <VStack sx={{"padding": "0px !important"}}>
+  <Avatar name={`Adam Power`} size={`2xl`} src={`lego2.jpg`} sx={{"width": "100%", "height": "100%", "color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
+  <Text sx={{"color": "#A3ABB2", "fontFamily": "Poppins", "marginTop": "0px !important", "fontSize": "0.7em", "padding": "1em", "textAlign": "center"}}>
+  {`Hecho con DALLE-3`}
+</Text>
+</VStack>
+</Box>
+  <VStack alignItems={`start`} spacing={`1em`} sx={{"marginLeft": "0.5em", "width": "100%", "height": "100%"}}>
   <Heading size={`lg`} sx={{"color": "#F1F2F4", "fontFamily": "Poppins", "fontWeight": "500"}}>
   {`Adam Power Gonzalez`}
 </Heading>
@@ -62,6 +70,7 @@ export default function Component() {
 </Link>
 </HStack>
 </VStack>
+</Flex>
 </HStack>
   <Flex sx={{"width": "100%", "fontFamily": "Poppins"}}>
   <Box sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>

@@ -12,18 +12,38 @@ def header()-> rx.Component:
         return rx.vstack(
                 #Para que se quede alado del icono
             rx.hstack(
-                rx.avatar(
-                        name="Adam Power",
-                        size="2xl",
-                        width="30%",
-                        height="20%",
-                        src="lego.jpg",
-                        color=Textcolor.BODY.value,
-                        bg=Color.BACKGROUND2.value,
-                        padding="2px",
-                        border="4px",
-                        border_color=Color.PRIMARY.value, #color del borde del avatar
+                    rx.flex(
+                            rx.box(
+                rx.vstack(
+                        rx.avatar(
+                                name="Adam Power",
+                                size="2xl",
+                                width="100%",
+                                height="100%",
+                                src="lego2.jpg",
+                                color=Textcolor.BODY.value,
+                                bg=Color.BACKGROUND2.value,
+                                padding="2px",
+                                border="4px",
+                                border_color=Color.PRIMARY.value, #color del borde del avatar
+                                
+                                
+                        ),
+                rx.text(
+                        "Hecho con DALLE-3",
+                        color=Textcolor.FOOTER.value,
+                        font_family= font.DEFAULT.value,
+                        margin_top=Size.ZERO.value,
+                        font_size=Size.SMALL1.value,
+                        padding=Size.DEFAULT.value,
+                        text_align= "center",
+                        ),
                         
+                        padding=Size.ZERO.value,
+                        ),
+                        align_items="start",
+                        width="50%",
+                        height="100%",
                 ),
                 rx.vstack(
                         rx.heading(
@@ -78,10 +98,16 @@ def header()-> rx.Component:
                                
                         ),
                         align_items="start" ,
-                        
-                        spacing=Size.MEDIUM.value,
-                        
+                        margin_left=Size.SMALL.value,
+                        spacing=Size.DEFAULT.value,
+                        width="100%",  # Adjust the width property as needed
+                        height="100%"
                       
+                ),
+                
+                align_items="center",
+                width="100%",  # Adjust the width property as needed
+                height="100%"
                 ),
                 
         ),
@@ -102,7 +128,7 @@ def header()-> rx.Component:
             font_size = Size.MEDIUM1.value,
 
         ),
-            spacing=Size.BIG.value, #Spacing para darle espacio a todos los componentes
+            spacing=Size.DEFAULT.value, #Spacing para darle espacio a todos los componentes
             align_items="start"
                
         )
