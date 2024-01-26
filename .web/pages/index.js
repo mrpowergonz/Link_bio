@@ -3,7 +3,7 @@
 
 import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { AspectRatio, Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Flex, Heading, HStack, Image as ChakraImage, Link, Spacer, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Flex, Heading, HStack, Image as ChakraImage, Link, SimpleGrid, Spacer, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
 import NextHead from "next/head"
@@ -268,23 +268,33 @@ export default function Component() {
 </VStack>
 </HStack>
 </VStack>
-  <VStack justifyContent={`center`} sx={{"isExternal": true, "display": "flex", "width": "100%", "href": "https://mrpower.portfoliobox.net/"}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center", "fontSize": "1em", "color": "#A3ABB2", "fontFamily": "Poppins", "paddingTop": "0px !important", "paddingBottom": "0.5em"}}>
+  <HStack sx={{"href": "https://mrpower.portfoliobox.net/", "isExternal": true}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center"}}>
   <CardHeader>
-  <Heading sx={{"fontSize": "1em", "fontWeight": "900", "color": "#C3C7CB", "marginTop": "0.5em", "fontFamily": "Poppins"}}>
+  <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Sloth machine`}
 </Heading>
 </CardHeader>
   <CardBody>
-  <AspectRatio ratio={1.25} sx={{"loading": "lazy", "width": "6em", "height": "6em", "margin": "0px !important"}}>
-  <ChakraImage src={`github_white.png`} sx={{"borderRadius": "none", "paddingTop": "0px !important", "paddingBottom": "0px !important"}}/>
-</AspectRatio>
+  <SimpleGrid columns={[2]} spacing={`3`} sx={{"alignItems": "center"}}>
+  <Box sx={{"height": "5em", "width": "5em"}}>
+  <ChakraImage src={`github_white.png`} sx={{"width": "100%", "margin": "1em"}}/>
+</Box>
+  <Box>
+  <Text sx={{"color": "#C3C7CB", "fontSize": "0.7em", "fontFamily": "Poppins", "alignItems": "center", "paddingTop": "1.5em"}}>
+  {`contruido con`}
+  <ChakraImage src={`python.png`} sx={{"width": "30%", "margin": "auto", "paddingTop": "1.5em"}}/>
+</Text>
+</Box>
+</SimpleGrid>
 </CardBody>
   <CardFooter>
-  {`Sloth machine created with Python`}
+  <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
+  {`Sloth machine built in python`}
+</Heading>
 </CardFooter>
 </Card>
-</VStack>
+</HStack>
 </VStack>
 </Center>
   <VStack sx={{"marginBottom": "2em", "paddingBottom": "2em", "paddingX": "2em", "color": "#A3ABB2"}}>

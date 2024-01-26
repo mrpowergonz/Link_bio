@@ -19,6 +19,7 @@ STYLESHEETS = [
 class Size(Enum):
     ZERO = "0px !important"
     SMALL= "0.5em"
+    SMALL1= "0.7em"
     MEDIUM= "0.8em"
     MEDIUM1= "0.9em"
     DEFAULT= "1em"

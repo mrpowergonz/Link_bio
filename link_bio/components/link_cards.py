@@ -41,8 +41,58 @@ def link_cards() -> rx.Component:
         href="https://mrpower.portfoliobox.net/",
 
 
+    
         
-        
-    )
+    ),
 
+def alternative(image:str, url: str) -> rx.Component:
+    return  rx.hstack( 
+                rx.card(
+                    rx.responsive_grid(
+                        rx.box(
+                            rx.image(
+                                src=image,
+                                width="100%",
+                                margin=Size.DEFAULT.value,     
+                        ),
+                        height="5em",
+                        width="5em",
+
+                    ),
+                    rx.box(
+                        rx.text(
+                            "contruido con",
+                            
+                        rx.image(
+                            src="python.png",
+                            width="30%",
+                            margin="auto",
+                            padding_top="1.5em",
+                             
+                        ),
+                        color=Textcolor.BODY.value,
+                        font_size=Size.SMALL1.value,
+                        font_family= font.DEFAULT.value,
+                        align_items="center",
+                        padding_top="1.5em"
+                        ),
+                    ),
+                    align_items="center",
+                    columns=[2],
+                    spacing="3",
+                ),
+                header=rx.heading("Sloth machine", 
+                                font_size=Size.LARGE.value,
+                                font_weight="900", 
+                                color=Textcolor.BODY.value,),
+                footer=rx.heading("Sloth machine built in python", 
+                                size="sm",
+                                font_size=Size.DEFAULT.value,
+                                color=Textcolor.FOOTER.value,),
+                style=styles.style_card,
+    ),
+    href="https://mrpower.portfoliobox.net/",
+    
+    is_external=True
+)
 
