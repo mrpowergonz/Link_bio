@@ -277,8 +277,9 @@ export default function Component() {
 </VStack>
 </HStack>
 </VStack>
-  <HStack sx={{"href": "https://mrpower.portfoliobox.net/", "isExternal": true}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center"}}>
+  <HStack>
+  <HStack>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center", "href": "https://github.com/", "isExternal": true}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Sloth machine`}
@@ -289,20 +290,75 @@ export default function Component() {
   <Box sx={{"height": "5em", "width": "5em"}}>
   <ChakraImage src={`github_white.png`} sx={{"width": "100%", "margin": "1em"}}/>
 </Box>
-  <Box>
-  <Text sx={{"color": "#C3C7CB", "fontSize": "0.7em", "fontFamily": "Poppins", "alignItems": "center", "paddingTop": "1.5em"}}>
-  {`contruido con`}
-  <ChakraImage src={`python.png`} sx={{"width": "30%", "margin": "auto", "paddingTop": "1.5em"}}/>
+  <Box sx={{"color": "#C3C7CB", "fontSize": "0.7em", "fontFamily": "Poppins", "alignItems": "center", "paddingTop": "1.5em"}}>
+  <Text>
+  {`construido con`}
 </Text>
+  <ChakraImage src={`python.png`} sx={{"width": "30%", "margin": "auto", "paddingTop": "1.5em"}}/>
 </Box>
 </SimpleGrid>
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Sloth machine built in python`}
+  {`Sloth machine built in Python`}
 </Heading>
 </CardFooter>
 </Card>
+</HStack>
+  <HStack>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center", "href": "https://github.com/", "isExternal": true}}>
+  <CardHeader>
+  <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
+  {`To do app`}
+</Heading>
+</CardHeader>
+  <CardBody>
+  <SimpleGrid columns={[2]} spacing={`3`} sx={{"alignItems": "center"}}>
+  <Box sx={{"height": "5em", "width": "5em"}}>
+  <ChakraImage src={`github_black.png`} sx={{"width": "100%", "margin": "1em"}}/>
+</Box>
+  <Box sx={{"color": "#C3C7CB", "fontSize": "0.7em", "fontFamily": "Poppins", "alignItems": "center", "paddingTop": "1.5em"}}>
+  <Text>
+  {`construido con`}
+</Text>
+  <ChakraImage src={`django.png`} sx={{"width": "30%", "margin": "auto", "paddingTop": "1.5em"}}/>
+</Box>
+</SimpleGrid>
+</CardBody>
+  <CardFooter>
+  <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
+  {`App built in Django`}
+</Heading>
+</CardFooter>
+</Card>
+</HStack>
+  <HStack>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "9em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": ["9em", "15emem", "15em", "15em", "15em"], "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "stretch", "justify": "center", "href": "https://github.com/", "isExternal": true}}>
+  <CardHeader>
+  <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
+  {`Password generator`}
+</Heading>
+</CardHeader>
+  <CardBody>
+  <SimpleGrid columns={[2]} spacing={`3`} sx={{"alignItems": "center"}}>
+  <Box sx={{"height": "5em", "width": "5em"}}>
+  <ChakraImage src={`github_black.png`} sx={{"width": "100%", "margin": "1em"}}/>
+</Box>
+  <Box sx={{"color": "#C3C7CB", "fontSize": "0.7em", "fontFamily": "Poppins", "alignItems": "center", "paddingTop": "1.5em"}}>
+  <Text>
+  {`construido con`}
+</Text>
+  <ChakraImage src={`javascript.png`} sx={{"width": "30%", "margin": "auto", "paddingTop": "1.5em"}}/>
+</Box>
+</SimpleGrid>
+</CardBody>
+  <CardFooter>
+  <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
+  {`App built in Javascript`}
+</Heading>
+</CardFooter>
+</Card>
+</HStack>
 </HStack>
 </VStack>
 </Center>
