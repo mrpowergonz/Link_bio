@@ -23,6 +23,7 @@ class Size(Enum):
     MEDIUM= "0.8em"
     MEDIUM1= "0.9em"
     DEFAULT= "1em"
+    LARGE2= "1.2em"
     LARGE= "1.5em"
     BIG= "2em"
     VERY_BIG="4em"
@@ -92,6 +93,8 @@ style_card = dict (
     transition= "0.5s",
    
 )
+
+
 
 title_card_style =dict(
 {

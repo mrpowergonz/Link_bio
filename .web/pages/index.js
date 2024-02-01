@@ -1,22 +1,26 @@
 /** @jsxImportSource @emotion/react */
 
 
-import { Fragment } from "react"
+import { Fragment, useRef } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
 import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Container, Flex, Heading, HStack, Image as ChakraImage, Link, SimpleGrid, Spacer, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
+import { refs } from "/utils/state"
 import NextHead from "next/head"
 
 
 
 export default function Component() {
+  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
+  const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
+  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
 
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
-  <HStack sx={{"position": "sticky", "bg": "#171F26", "paddingX": "2em", "paddingY": "1em", "zIndex": "999", "top": "0"}}>
+  <HStack sx={{"position": "sticky", "bg": "#171F26", "paddingX": "2em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
   <Box sx={{"fontFamily": "Comfortaa", "fontSize": "1.5em", "fontWeight": "500"}}>
   <Text as={`span`} sx={{"color": "#14A1F0"}}>
   {`Adam`}
@@ -25,12 +29,36 @@ export default function Component() {
   {`dev`}
 </Text>
 </Box>
-  <Text sx={{"fontFamily": "Poppins"}}>
-  {`Mr.Power`}
+  <Box>
+  <Link as={NextLink} href={`#header-section`} sx={{"scroll": "#header-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "40rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  {`Inicio`}
 </Text>
+</Link>
+</Box>
+  <Box>
+  <Link as={NextLink} href={`#tech-section`} sx={{"scroll": "#tech-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  {`Tecnologias`}
+</Text>
+</Link>
+</Box>
+  <Box>
+  <Link as={NextLink} href={`#proyectos-section`} sx={{"scroll": "#proyectos-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  {`Proyectos`}
+</Text>
+</Link>
+</Box>
+  <Spacer/>
+  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"scroll": "false", "p": "3", "_hover": {"textDecoration": "underline"}, "text-decoration": "none"}}>
+  <ChakraImage src={`github_white.png`} sx={{"height": "2em", "display": "inline-flex", "pr": "0.5", "alignItems": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}/>
+  {`Source`}
+</Link>
 </HStack>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
+  <Box id={`header-section`} ref={ref_header_section}>
   <VStack alignItems={`start`} spacing={`1em`}>
   <HStack>
   <Flex sx={{"alignItems": "center", "width": "100%", "height": "100%"}}>
@@ -91,6 +119,7 @@ export default function Component() {
   {`Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! `}
 </Text>
 </VStack>
+</Box>
   <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
   <Heading size={`lg`} sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "1em", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Links de interés`}
@@ -204,6 +233,7 @@ export default function Component() {
 </Button>
 </Link>
 </VStack>
+  <Box id={`tech-section`} ref={ref_tech_section}>
   <VStack sx={{"width": "115%", "paddingTop": "8em"}}>
   <Heading size={`lg`} sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "1em", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Tecnologias`}
@@ -311,9 +341,11 @@ export default function Component() {
 </VStack>
 </HStack>
 </VStack>
+</Box>
+  <Box id={`proyectos-section`} ref={ref_proyectos_section}>
   <HStack>
-  <Container centerContent={true} sx={{"justify": "center", "align": "start", "marginTop": "3em", "marginBottom": "2em", "width": "100%", "alignItems": "center", "marginLeft": "-5em"}}>
-  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "2em", "color": "#F1F2F4", "textAlign": "right", "marginBottom": "-50px", "fontWeight": "500"}}>
+  <Container centerContent={true} sx={{"justify": "center", "align": "start", "marginTop": "3em", "marginBottom": "-2em", "width": "100%", "alignItems": "center", "marginLeft": "-5em"}}>
+  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "4em", "color": "#F1F2F4", "textAlign": "right", "marginBottom": "-51px", "marginLeft": "-1.5em", "fontWeight": "500"}}>
   {`Proyectos`}
 </Heading>
   <HStack sx={{"marginBottom": "-10em"}}>
@@ -496,9 +528,10 @@ export default function Component() {
 </HStack>
 </Container>
 </HStack>
+</Box>
 </VStack>
 </Center>
-  <VStack sx={{"marginBottom": "2em", "paddingBottom": "2em", "paddingX": "2em", "color": "#A3ABB2"}}>
+  <VStack sx={{"marginBottom": "2em", "paddingBottom": "2em", "paddingX": "2em", "color": "#A3ABB2", "paddingLeft": "6em"}}>
   <Avatar name={`Adam Power`} size={`2xl`} src={`logo.png`} sx={{"color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0", "alt": "Logotipo MR.Power. Mi silueta en un diafragma de fotografia"}}/>
   <Link as={NextLink} href={`https://mrpower.portfoliobox.net/`} isExternal={true} sx={{"fontSize": "0.8em", "fontFamily": "Poppins", "text-decoration": "none", "_hover": {}}}>
   {`2020-2024 Mr. Power by Adam Power`}

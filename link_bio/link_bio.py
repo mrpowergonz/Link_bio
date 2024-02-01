@@ -1,5 +1,6 @@
 import reflex as rx
 from link_bio.components.navbar import navbar #importamos el navbar
+from link_bio.components.link_icon import link_icon
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.views.tech.tech import tech
@@ -18,14 +19,26 @@ def index() -> rx.Component:
         navbar(), #lo meto aqui para que ocupe todo
         rx.center(# manera de centrar con reflex
             rx.vstack( #componente que lo mete vertical
-                header(),
+                
+                
+                rx.box(
+                    header(),
+                    id="header-section",),
+                
                 links(),
-                tech(),
-                cards(),
+                rx.box(
+                    tech(),
+                    id="tech-section",),
+                
+                
+                rx.box(
+                    cards(),
+                    id="proyectos-section",),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y= Size.BIG.value,
                 padding=Size.BIG.value,
+                
            
             )
         ),
