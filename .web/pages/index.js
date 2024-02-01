@@ -12,8 +12,8 @@ import NextHead from "next/head"
 
 
 export default function Component() {
-  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
+  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
   const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
 
   return (
@@ -31,7 +31,7 @@ export default function Component() {
 </Box>
   <Box>
   <Link as={NextLink} href={`#header-section`} sx={{"scroll": "#header-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
-  <Text sx={{"marginLeft": "40rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  <Text sx={{"paddingLeft": "32em", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Inicio`}
 </Text>
 </Link>

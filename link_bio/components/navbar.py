@@ -15,7 +15,8 @@ def navbar()-> rx.Component:
         rx.box(
             rx.link(  
                     rx.text("Inicio",
-                    margin_left="40rem", 
+                   
+                    padding_left="32em",
                     _hover={
                     "cursor": "pointer",
                     "transform": "scale(1.05)",
