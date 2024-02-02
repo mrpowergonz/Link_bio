@@ -6,21 +6,22 @@ import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_compo
 import { Avatar, Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Container, Flex, Heading, HStack, Image as ChakraImage, Link, SimpleGrid, Spacer, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
+import { EmailIcon } from "@chakra-ui/icons"
 import { refs } from "/utils/state"
 import NextHead from "next/head"
 
 
 
 export default function Component() {
+  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
   const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
-  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
 
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
-  <HStack sx={{"position": "sticky", "bg": "#171F26", "paddingX": "2em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
+  <HStack sx={{"position": "sticky", "bg": "#171F26", "backdropFilter": "blur(10px)", "paddingX": "2em", "paddingY": "0.8em", "zIndex": "999", "top": "0"}}>
   <Box sx={{"fontFamily": "Comfortaa", "fontSize": "1.5em", "fontWeight": "500"}}>
   <Text as={`span`} sx={{"color": "#14A1F0"}}>
   {`Adam`}
@@ -30,31 +31,35 @@ export default function Component() {
 </Text>
 </Box>
   <Box>
-  <Link as={NextLink} href={`#header-section`} sx={{"scroll": "#header-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
-  <Text sx={{"paddingLeft": "32em", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  <HStack>
+  <Link as={NextLink} href={`#header-section`} sx={{"scroll": "#header-section", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Inicio`}
 </Text>
 </Link>
-</Box>
-  <Box>
-  <Link as={NextLink} href={`#tech-section`} sx={{"scroll": "#tech-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
-  <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  <Link as={NextLink} href={`#tech-section`} sx={{"scroll": "#tech-section", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "1rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Tecnologias`}
 </Text>
 </Link>
-</Box>
-  <Box>
-  <Link as={NextLink} href={`#proyectos-section`} sx={{"scroll": "#proyectos-section", "p": "3", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
-  <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
+  <Link as={NextLink} href={`#proyectos-section`} sx={{"scroll": "#proyectos-section", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Text sx={{"marginLeft": "1rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Proyectos`}
 </Text>
 </Link>
+</HStack>
 </Box>
   <Spacer/>
-  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"scroll": "false", "p": "3", "_hover": {"textDecoration": "underline"}, "text-decoration": "none"}}>
-  <ChakraImage src={`github_white.png`} sx={{"height": "2em", "display": "inline-flex", "pr": "0.5", "alignItems": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}/>
+  <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"scroll": "false", "paddingRight": "-5em", "_hover": {"textDecoration": "underline"}, "text-decoration": "none"}}>
+  <ChakraImage src={`github_white.png`} sx={{"height": "2em", "display": "inline-flex", "pr": "0.2", "alignItems": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}/>
   {`Source`}
 </Link>
+  <HStack sx={{"marginLeft": "0.5rem", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}>
+  <EmailIcon sx={{"color": "white"}}/>
+  <Text sx={{"fontSize": "0.8em", "color": "#f8c133"}}>
+  {`adampg74@gmail.com`}
+</Text>
+</HStack>
 </HStack>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
@@ -64,7 +69,7 @@ export default function Component() {
   <Flex sx={{"alignItems": "center", "width": "100%", "height": "100%"}}>
   <Box sx={{"alignItems": "start", "width": "50%", "height": "100%"}}>
   <VStack sx={{"padding": "0px !important"}}>
-  <Avatar name={`Adam Power`} size={`2xl`} src={`lego2.jpg`} sx={{"width": "100%", "height": "100%", "color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0"}}/>
+  <Avatar name={`Adam Power`} size={`2xl`} src={`lego2.jpg`} sx={{"width": "100%", "height": "100%", "color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0", "_hover": {"cursor": "pointer", "transform": "scale(1.10)"}, "transition": "0.5s"}}/>
   <Text sx={{"color": "#A3ABB2", "fontFamily": "Poppins", "marginTop": "0px !important", "fontSize": "0.7em", "padding": "1em", "textAlign": "center"}}>
   {`Hecho con DALLE-3`}
 </Text>

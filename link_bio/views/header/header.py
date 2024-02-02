@@ -26,6 +26,11 @@ def header()-> rx.Component:
                                                 padding="2px",
                                                 border="4px",
                                                 border_color=Color.PRIMARY.value, #color del borde del avatar
+                                                 _hover={
+                                                        "cursor": "pointer",
+                                                        "transform": "scale(1.10)",
+                                                        },
+                                                        transition= "0.5s",  
                                                 
                                                 
                                         ),
