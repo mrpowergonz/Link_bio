@@ -41,3 +41,4 @@ GITHUB4_URL="https://github.com/mrpowergonz/cryptoverse-main"
 GITHUB5_URL="https://booking-example-page.netlify.app/"
 GITHUB7_URL="https://simpled-blackjack-game.netlify.app/"
 GITHUB6_URL="https://github.com/mrpowergonz/Link_bio"
+

@@ -5,10 +5,10 @@ from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.views.tech.tech import tech
 from link_bio.views.cards.cards import cards
-
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles #as para importalo con un alias
 from link_bio.styles.styles import Size as Size
+
 
 #Lo que necesitaria para un Hola mundo
 class State(rx.State):
@@ -18,30 +18,26 @@ def index() -> rx.Component:
     return  rx.box(
         navbar(), #lo meto aqui para que ocupe todo
         rx.center(# manera de centrar con reflex
-            rx.vstack( #componente que lo mete vertical
-                
-                
-                rx.box(
+            rx.box(
+                rx.vstack( #componente que lo mete vertical    
                     header(),
-                    id="header-section",),
-                
-                links(),
-                rx.box(
-                    tech(),
-                    id="tech-section",),
-                
-                
-                rx.box(
-                    cards(),
-                    id="proyectos-section",),
-                max_width=styles.MAX_WIDTH,
-                width="100%",
-                margin_y= Size.BIG.value,
-                padding=Size.BIG.value,
-                
-           
-            )
-        ),
+                    links(),
+                    rx.box(
+                        tech(),
+                        id="tech-section",),
+                    rx.box(
+                        cards(),
+                        id="proyectos-section",),
+
+                    max_width=styles.MAX_WIDTH,
+                    width="100%",
+                    margin_y= Size.BIG.value,
+                    padding=Size.BIG.value,   
+            
+                  ),
+                ),
+                id="header-section",
+            ),
          footer()
     )
 
@@ -61,4 +57,5 @@ app.add_page(
         {"name":"og:type", "content": "website"},
      
     ]
-    )
+    ),
+

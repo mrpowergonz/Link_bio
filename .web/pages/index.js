@@ -21,7 +21,7 @@ export default function Component() {
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box>
-  <HStack sx={{"position": "sticky", "bg": "#171F26", "backdropFilter": "blur(10px)", "paddingX": "2em", "paddingY": "0.8em", "zIndex": "999", "top": "0"}}>
+  <HStack sx={{"position": "sticky", "bg": "#171F26", "backdropFilter": "blur(10px)", "paddingX": "2em", "paddingY": "1.5em", "zIndex": "999", "top": "0"}}>
   <Box sx={{"fontFamily": "Comfortaa", "fontSize": "1.5em", "fontWeight": "500"}}>
   <Text as={`span`} sx={{"color": "#14A1F0"}}>
   {`Adam`}
@@ -32,7 +32,7 @@ export default function Component() {
 </Box>
   <Box>
   <HStack>
-  <Link as={NextLink} href={`#header-section`} sx={{"scroll": "#header-section", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`#header-section`} sx={{"scroll": ["smooth", "#header-section"], "scrollBehavior": "smooth", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
   <Text sx={{"marginLeft": "2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Inicio`}
 </Text>
@@ -51,8 +51,11 @@ export default function Component() {
 </Box>
   <Spacer/>
   <Link as={NextLink} href={`https://github.com/mrpowergonz`} isExternal={true} sx={{"scroll": "false", "paddingRight": "-5em", "_hover": {"textDecoration": "underline"}, "text-decoration": "none"}}>
-  <ChakraImage src={`github_white.png`} sx={{"height": "2em", "display": "inline-flex", "pr": "0.2", "alignItems": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}/>
+  <ChakraImage src={`github_white.png`} sx={{"height": "2em", "display": "inline-flex", "alignItems": "center", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}/>
   {`Source`}
+</Link>
+  <Link as={NextLink} href={`https://drive.google.com/file/d/1u8uokRuk21C46wBfQGCHjahzu9-DCpMU/view?usp=drive_link`} isExternal={true} sx={{"marginLeft": "1rem", "paddingRight": "2em", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none"}}>
+  {`CV`}
 </Link>
   <HStack sx={{"marginLeft": "0.5rem", "_hover": {"cursor": "pointer", "transform": "scale(1.15)"}, "transition": "0.5s"}}>
   <EmailIcon sx={{"color": "white"}}/>
@@ -61,9 +64,9 @@ export default function Component() {
 </Text>
 </HStack>
 </HStack>
-  <Center>
+  <Center id={`header-section`} ref={ref_header_section}>
+  <Box>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
-  <Box id={`header-section`} ref={ref_header_section}>
   <VStack alignItems={`start`} spacing={`1em`}>
   <HStack>
   <Flex sx={{"alignItems": "center", "width": "100%", "height": "100%"}}>
@@ -124,7 +127,6 @@ export default function Component() {
   {`Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! `}
 </Text>
 </VStack>
-</Box>
   <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
   <Heading size={`lg`} sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "1em", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Links de interés`}
@@ -349,7 +351,7 @@ export default function Component() {
 </Box>
   <Box id={`proyectos-section`} ref={ref_proyectos_section}>
   <HStack>
-  <Container centerContent={true} sx={{"justify": "center", "align": "start", "marginTop": "3em", "marginBottom": "-2em", "width": "100%", "alignItems": "center", "marginLeft": "-5em"}}>
+  <Container centerContent={true} sx={{"justify": "center", "align": "start", "marginTop": "3em", "marginBottom": "-2em", "width": "100%", "alignItems": "center", "marginLeft": "-5em", "transition": "1s"}}>
   <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "4em", "color": "#F1F2F4", "textAlign": "right", "marginBottom": "-51px", "marginLeft": "-1.5em", "fontWeight": "500"}}>
   {`Proyectos`}
 </Heading>
@@ -535,6 +537,7 @@ export default function Component() {
 </HStack>
 </Box>
 </VStack>
+</Box>
 </Center>
   <VStack sx={{"marginBottom": "2em", "paddingBottom": "2em", "paddingX": "2em", "color": "#A3ABB2", "paddingLeft": "6em"}}>
   <Avatar name={`Adam Power`} size={`2xl`} src={`logo.png`} sx={{"color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0", "alt": "Logotipo MR.Power. Mi silueta en un diafragma de fotografia"}}/>

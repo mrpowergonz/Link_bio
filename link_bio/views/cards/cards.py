@@ -95,7 +95,8 @@ def cards() -> rx.Component:
             margin_bottom="-2em",
             width="100%",
             align_items= "center",
-            margin_left="-5em",       
+            margin_left="-5em",  
+            transition="1s",    
             
         ),
         
