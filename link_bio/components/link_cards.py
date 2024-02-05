@@ -102,7 +102,7 @@ def create_card_structure(title: str, footer: str, image: str, imagez: str, url:
         style=styles.style_card,
         width="70%",
         heigh=Size.BIG.value,
-        spacing="1em",
+        
         align_items="center",
     )
 

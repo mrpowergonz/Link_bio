@@ -7,6 +7,7 @@ from link_bio.styles.fonts import font
 
 def footer()-> rx.Component:
     return rx.vstack(
+        
         rx.avatar(
                 name="Adam Power",
                 size="2xl",
@@ -36,4 +37,42 @@ def footer()-> rx.Component:
         padding_x=Size.BIG.value,
         color=Textcolor.FOOTER.value,
         padding_left="6em",
-    )
+        )
+    
+
+
+def footer_mobile()-> rx.Component:
+    return rx.vstack(
+           rx.mobile_only(
+                rx.avatar(
+                        name="Adam Power",
+                        size="2xl",
+                        src="logo.png",
+                        color=Textcolor.BODY.value,
+                        bg=Color.BACKGROUND2.value,
+                        padding="2px",
+                        border="4px",
+                        border_color=Color.PRIMARY.value,
+                    alt="Logotipo MR.Power. Mi silueta en un diafragma de fotografia"
+                    ),
+                rx.link(f"2020-{datetime.date.today().year} Mr. Power by Adam Power",
+                        href="https://mrpower.portfoliobox.net/",
+                        is_external=True,  #para que se abra en una nueva pagina
+                        font_size= Size.MEDIUM.value,
+                        font_family= font.DEFAULT.value,
+                        
+                ),
+                rx.text(
+                    " building web pages from Burgos to the world",
+                    font_family= font.DEFAULT.value,
+                    margin_top=Size.ZERO.value,
+                    font_size= Size.MEDIUM.value,
+                    ),
+                
+            ),
+                margin_bottom=Size.BIG.value,
+                padding_bottom=Size.BIG.value,
+                padding_x=Size.SMALL.value,
+                color=Textcolor.FOOTER.value,
+                padding_left="6em",
+        )

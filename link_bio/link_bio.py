@@ -1,11 +1,11 @@
 import reflex as rx
-from link_bio.components.navbar import navbar #importamos el navbar
+from link_bio.components.navbar import navbar, navbar_mobile #importamos el navbar
 from link_bio.components.link_icon import link_icon
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.views.tech.tech import tech
 from link_bio.views.cards.cards import cards
-from link_bio.components.footer import footer
+from link_bio.components.footer import footer,footer_mobile
 import link_bio.styles.styles as styles #as para importalo con un alias
 from link_bio.styles.styles import Size as Size
 
@@ -16,11 +16,14 @@ class State(rx.State):
 
 def index() -> rx.Component:
     return  rx.box(
+        rx.desktop_only(
         navbar(), #lo meto aqui para que ocupe todo
+        
         rx.center(# manera de centrar con reflex
             rx.box(
                 rx.vstack( #componente que lo mete vertical    
                     header(),
+                    
                     links(),
                     rx.box(
                         tech(),
@@ -38,8 +41,40 @@ def index() -> rx.Component:
                 ),
                 id="header-section",
             ),
-         footer()
+         footer(),
+        
+    ),
+    rx.mobile_and_tablet(
+     #lo meto aqui para que ocupe todo
+        navbar_mobile(),
+        rx.center(# manera de centrar con reflex
+            rx.box(
+                rx.vstack( #componente que lo mete vertical    
+                    header(),
+                    
+                    links(),
+                    rx.box(
+                        tech(),
+                        id="tech1-section",),
+                    rx.box(
+                        cards(),
+                        id="proyectos1-section",),
+
+                    max_width=styles.MAX_WIDTH,
+                    width="100%",
+                    margin_y= Size.BIG.value,
+                    padding=Size.BIG.value,   
+            
+                  ),
+                ),
+                id="header1-section",
+            ),
+         
+         footer_mobile()
+    ),
     )
+    
+
 
 
 
