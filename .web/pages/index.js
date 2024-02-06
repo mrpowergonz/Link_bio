@@ -13,12 +13,12 @@ import NextHead from "next/head"
 
 
 export default function Component() {
-  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
   const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
-  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
-  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
-  const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
   const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
+  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
+  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
+  const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
 
   return (
     <Fragment>
@@ -896,12 +896,13 @@ export default function Component() {
 </Box>
   <Box id={`proyectos1-section`} ref={ref_proyectos1_section}>
   <HStack>
-  <Box sx={{"display": ["block", "block", "block", "none"]}}>
-  <VStack justify={`center`} sx={{"alignItems": "center", "textAlign": "center", "margin": "-10vh", "width": "100%", "align": "center", "marginTop": "2em", "marginBottom": "2em", "marginLeft": "0.5em"}}>
-  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "2em", "color": "#F1F2F4", "textAlign": "center", "marginBottom": "0.5em", "marginLeft": "auto", "fontWeight": "500"}}>
+  <Box sx={{"width": "100%", "marginLeft": "1em", "marginBottom": "1em", "display": ["block", "block", "block", "none"]}}>
+  <VStack justify={`center`} sx={{"alignItems": "center", "textAlign": "center", "width": "100%", "margin": "0em", "align": "center", "marginTop": "2em", "marginBottom": "2em", "marginLeft": "0.5em"}}>
+  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "2em", "color": "#F1F2F4", "textAlign": "center", "marginBottom": "0.5em", "marginLeft": "-1.5em", "fontWeight": "500"}}>
   {`Proyectos`}
 </Heading>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center"}}>
+  <HStack>
+  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "center", "marginBottom": "1em"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/cryptoverse-main`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
@@ -930,7 +931,7 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center"}}>
+  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "center", "marginBottom": "1em"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Sloth-machine-python`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
@@ -959,7 +960,9 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center", "marginLeft": "-2em"}}>
+</HStack>
+  <HStack>
+  <Box sx={{"width": "75%", "justify": "center", "align": "center", "marginBottom": "1em"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/to-do-app-DJANGO`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
@@ -988,7 +991,7 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "75%", "justify": "center", "align": "start"}}>
+  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "start", "marginBottom": "1em"}}>
   <Link as={NextLink} href={`https://adam-password-generator-site.netlify.app`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
@@ -1017,6 +1020,8 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
+</HStack>
+  <HStack>
   <Box sx={{"width": "75%", "justify": "center", "align": "center"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Link_bio`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
@@ -1075,6 +1080,7 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
+</HStack>
 </VStack>
 </Box>
 </HStack>

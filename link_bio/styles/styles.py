@@ -97,7 +97,10 @@ style_card = dict (
 style_card_mobile= dict (
     align_items= "center",
     text_align= "center",
-    margin="-10vh",    
+    width="100%",   
+    margin="0em",
+      
+    
    
 )
 
