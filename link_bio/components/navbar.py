@@ -80,13 +80,14 @@ def navbar() -> rx.Component:
                     "transform": "scale(1.15)",
                 },
                 transition="0.5s",
+                margin_right="-2em",
             ),
-            "Source",
+            "< ... >",
             href="https://github.com/mrpowergonz",
             scroll="false",
-            padding_right="-5em",
+            
             _hover={
-                "textDecoration": "underline"
+                "textDecoration": "none"
             },
             is_external=True
         ),
@@ -114,14 +115,16 @@ def navbar() -> rx.Component:
             },
             transition="0.5s",
         ),
-        position="sticky",
+        width="100%",
+        position="fixed",
         bg=color.CONTENT.value,
         backdrop_filter="blur(10px)",
         padding_x=Size.BIG.value,
         padding_y=Size.LARGE.value,
-        z_index="999",
+        z_index="9999",
         top="0"
     ),
+    
 )
 
 def navbar_mobile() -> rx.Component:
@@ -136,7 +139,7 @@ def navbar_mobile() -> rx.Component:
             rx.hstack(
                 rx.link(
                     rx.text("Inicio",
-                            margin_left="2rem",
+                            margin_left="-2rem",
                             _hover={
                                 "cursor": "pointer",
                                 "transform": "scale(1.05)",
@@ -184,7 +187,7 @@ def navbar_mobile() -> rx.Component:
             ),
         ),
         rx.spacer(),
-
+        rx.hstack(
         rx.link(
             rx.image(
                 src="github_white.png",
@@ -201,7 +204,8 @@ def navbar_mobile() -> rx.Component:
             "Source",
             href="https://github.com/mrpowergonz",
             scroll="false",
-            padding_right="-5em",
+            
+            margin_right="-2em",
             _hover={
                 "textDecoration": "underline"
             },
@@ -224,20 +228,24 @@ def navbar_mobile() -> rx.Component:
         rx.hstack(
             rx.icon(tag="email", color="white"),
             rx.text("adampg74@gmail.com", font_size=Size.MEDIUM.value, color="#f8c133"),
-            margin_left="0.5rem",
+            margin_left="-5rem",
+            padding_right="2em",
             _hover={
                 "cursor": "pointer",
                 "transform": "scale(1.15)",
             },
             transition="0.5s",
-        ),
-        position="sticky",
+        ),),
+        position="fixed",
         bg=color.CONTENT.value,
         backdrop_filter="blur(10px)",
         padding_x=Size.SMALL.value,
-        padding_y=Size.LARGE.value,
+        padding_y=Size.SMALL.value,
         z_index="999",
         top="0",
-        width="200%"
+        left="50%",
+        transform="translateX(-50%)",
+        width="120%",
+        flex_direction="column"
     ),
 )

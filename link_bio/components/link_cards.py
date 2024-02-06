@@ -9,7 +9,6 @@ from link_bio.components.title import title
 
 
 
-#Investigar rx.link para enlace y rx.box para componente entero
 def link_cards() -> rx.Component:
     return rx.vstack(
         rx.card(
@@ -101,7 +100,8 @@ def create_card_structure(title: str, footer: str, image: str, imagez: str, url:
         ),
         style=styles.style_card,
         width="70%",
-        heigh=Size.BIG.value,
+        heigh="3em",
+        margin="2em",
         
         align_items="center",
     )

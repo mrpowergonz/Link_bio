@@ -36,7 +36,7 @@ def footer()-> rx.Component:
         padding_bottom=Size.BIG.value,
         padding_x=Size.BIG.value,
         color=Textcolor.FOOTER.value,
-        padding_left="6em",
+        padding_left="2em",
         )
     
 
@@ -70,7 +70,7 @@ def footer_mobile()-> rx.Component:
                     ),
                 
             ),
-                margin_bottom=Size.BIG.value,
+                margin_bottom=Size.SMALL.value,
                 padding_bottom=Size.BIG.value,
                 padding_x=Size.SMALL.value,
                 color=Textcolor.FOOTER.value,

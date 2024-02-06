@@ -30,7 +30,8 @@ def header()-> rx.Component:
                                                         "cursor": "pointer",
                                                         "transform": "scale(1.10)",
                                                         },
-                                                        transition= "0.5s",  
+                                                        transition= "0.5s",
+                                                
                                                 
                                                 
                                         ),
@@ -134,7 +135,8 @@ def header()-> rx.Component:
 
         ),
             spacing=Size.DEFAULT.value, #Spacing para darle espacio a todos los componentes
-            align_items="start"
+            align_items="start",
+            margin_top="3em"
                
         )
 
@@ -269,6 +271,7 @@ def header_mobile() -> rx.Component:
                 margin="auto"
                 
                 ),
+                
 
         ),
 

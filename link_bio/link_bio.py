@@ -3,8 +3,9 @@ from link_bio.components.navbar import navbar, navbar_mobile #importamos el navb
 from link_bio.components.link_icon import link_icon
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
-from link_bio.views.tech.tech import tech
+from link_bio.views.tech.tech import tech, tech_mobile
 from link_bio.views.cards.cards import cards
+from link_bio.views.cards.cards_mobile import cards_mobile
 from link_bio.components.footer import footer,footer_mobile
 import link_bio.styles.styles as styles #as para importalo con un alias
 from link_bio.styles.styles import Size as Size
@@ -54,10 +55,10 @@ def index() -> rx.Component:
                     
                     links(),
                     rx.box(
-                        tech(),
+                        tech_mobile(),
                         id="tech1-section",),
                     rx.box(
-                        cards(),
+                        cards_mobile(),
                         id="proyectos1-section",),
 
                     max_width=styles.MAX_WIDTH,
@@ -68,6 +69,9 @@ def index() -> rx.Component:
                   ),
                 ),
                 id="header1-section",
+                width="100%",
+                margin_left="5em",
+                margin_top="6em",
             ),
          
          footer_mobile()

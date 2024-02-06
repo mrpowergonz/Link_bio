@@ -85,12 +85,19 @@ style_card = dict (
     box_shadow = "0 0 20px #2777bb",
     margin="9em",    
     _hover={"transform": "scale(1)","box_shadow": "0 0 7px #f9cd45","transition": "all 0.3s ease-in-out", "transform": "translateY(-10px)"},
-    width=["9em","15emem","15em","15em","15em"],
+    width=["11em","17emem","17em","17em","17em"],
     height=["13em","18em","18em","18em","18em"],
     direction="column",
     align="strech",
     justify="center",
     transition= "0.5s",
+   
+)
+
+style_card_mobile= dict (
+    align_items= "center",
+    text_align= "center",
+    margin="-10vh",    
    
 )
 
