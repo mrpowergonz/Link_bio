@@ -238,7 +238,6 @@ def navbar_mobile() -> rx.Component:
         ),),
         position="fixed",
         bg=color.CONTENT.value,
-        backdrop_filter="blur(10px)",
         padding_x=Size.SMALL.value,
         padding_y=Size.SMALL.value,
         z_index="999",

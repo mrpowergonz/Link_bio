@@ -22,7 +22,7 @@ def cards() -> rx.Component:
                        color=Textcolor.HEADER.value,
                        text_align='right',
                        margin_bottom="30px",
-                       margin_left="-3.5em",
+                       margin_left="-3em",
                        padding_top="4em",
                        font_family=font.DEFAULT.value,
                        style=styles.title_style),
@@ -33,28 +33,33 @@ def cards() -> rx.Component:
                         const.GITHUB4_URL),
                     width="200%",
                     justify='center',
-                    align='start'
+                    align='start',
+                    
+                    
                 ),
-
+                rx.spacer(),
                 rx.box(
                     create_card(
                         "Sloth machine", "Sloth machine built in Python", "github_white.png", "python.png",
                         const.GITHUB1_URL),
                     width="200%",
-                    margin_left="-6em",
-                    style=styles.title_card_style
+                    style=styles.title_card_style,
+                    
                 ),
-
+                rx.spacer(),
                 rx.box(
                     create_card(
                         "To do app", "Take notes, App built in Django", "github_white.png", "django.png",
                         const.GITHUB2_URL),
                     width="200%",
-                    margin_left="-2em"
+                    
                 ),
-                width="300%",
-                margin_left="15em",
+                width="200%",
+                margin_left="9em",
                 margin_bottom="3em",
+                spacing="2em"
+                
+                
             ),
 
             rx.hstack(
@@ -63,28 +68,29 @@ def cards() -> rx.Component:
                         "Password generator", "App built in Javascript, create your own password", "github_white.png",
                         "javascript.png",
                         const.GITHUB3_URL),
-                    width="100%",
+                    width="200%",
                     justify='center',
                     align='start'
                 ),
-
+                rx.spacer(),
                 rx.box(
                     create_card(
                         "Portfolio", "Personal webpage", "github_white.png", "reflex.png",
                         const.GITHUB6_URL),
-                    width="100%"
+                    width="200%"
                 ),
-
+                rx.spacer(),
                 rx.box(
                     create_card(
                         "Booking", "CSS styles for a booking web page", "github_white.png", "css.png",
                         const.GITHUB5_URL),
-                    width="100%",
+                    width="200%",
                     margin_left="-4em"
                 ),
-                width="300%",
-                margin_left="15em",
-                margin_bottom="7em",
+                width="200%",
+                margin_left="9em",
+                margin_bottom="3em",
+                spacing="2em"
             ),
 
             justify='center',

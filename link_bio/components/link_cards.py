@@ -99,7 +99,7 @@ def create_card_structure(title: str, footer: str, image: str, imagez: str, url:
             color=Textcolor.FOOTER.value,
         ),
         style=styles.style_card,
-        width="70%",
+        width="100%",
         heigh="3em",
         margin="2em",
         

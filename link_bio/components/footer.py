@@ -55,24 +55,46 @@ def footer_mobile()-> rx.Component:
                         border_color=Color.PRIMARY.value,
                     alt="Logotipo MR.Power. Mi silueta en un diafragma de fotografia"
                     ),
-                rx.link(f"2020-{datetime.date.today().year} Mr. Power by Adam Power",
-                        href="https://mrpower.portfoliobox.net/",
-                        is_external=True,  #para que se abra en una nueva pagina
-                        font_size= Size.MEDIUM.value,
+               rx.box (
+                    rx.text(
+                        " building web pages",
                         font_family= font.DEFAULT.value,
+                        margin_top=Size.SMALL.value,
+                        font_size= Size.MEDIUM.value,
+                        ),
+                        width="100%"
+                ),
+                rx.box(
+                    rx.text(
+                        "from Burgos to",
+                        font_family= font.DEFAULT.value,
+                        margin_top=Size.SMALL.value,
+                        font_size= Size.MEDIUM.value,
+                        
+                        ),
+                    margin_left="1em"
+                ),
+                rx.box(
+                    rx.text(
+                        "the world",
+                        font_family= font.DEFAULT.value,
+                        margin_top=Size.SMALL.value,
+                        font_size= Size.MEDIUM.value,
+                        
+                        ),
+                    margin_left="2em"
+                ),
+                rx.link(f"2020-{datetime.date.today().year} Mr. Power",
+                    href="https://mrpower.portfoliobox.net/",
+                    is_external=True,  #para que se abra en una nueva pagina
+                    font_size= Size.MEDIUM.value,
+                    font_family= font.DEFAULT.value,
                         
                 ),
-                rx.text(
-                    " building web pages from Burgos to the world",
-                    font_family= font.DEFAULT.value,
-                    margin_top=Size.ZERO.value,
-                    font_size= Size.MEDIUM.value,
-                    ),
                 
             ),
                 margin_bottom=Size.SMALL.value,
-                padding_bottom=Size.BIG.value,
                 padding_x=Size.SMALL.value,
                 color=Textcolor.FOOTER.value,
-                padding_left="6em",
+                margin_left="13em"
         )

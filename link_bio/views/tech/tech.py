@@ -522,7 +522,7 @@ def tech_mobile() -> rx.Component:
                 
             ),
     ),
-    margin_left="2em",
+    margin_left="3em",
     style=styles.tech_style,
 
     ),

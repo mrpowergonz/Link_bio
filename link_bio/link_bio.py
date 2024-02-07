@@ -67,6 +67,8 @@ def index() -> rx.Component:
                     padding=Size.BIG.value,   
             
                   ),
+                  width="150%",
+                  margin_left="1em"
                 ),
                 id="header1-section",
                 width="100%",

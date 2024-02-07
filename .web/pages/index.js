@@ -14,11 +14,11 @@ import NextHead from "next/head"
 
 export default function Component() {
   const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
-  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
-  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
-  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
   const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
+  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
+  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
 
   return (
     <Fragment>
@@ -361,13 +361,13 @@ export default function Component() {
   <HStack>
   <Box sx={{"display": ["none", "none", "none", "block"]}}>
   <Container centerContent={true} sx={{"justify": "center", "align": "start", "marginTop": "1em", "marginBottom": "-6em", "width": "100%", "alignItems": "center", "marginLeft": "-5em"}}>
-  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "4em", "color": "#F1F2F4", "textAlign": "right", "marginBottom": "30px", "marginLeft": "-3.5em", "fontWeight": "500"}}>
+  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "4em", "color": "#F1F2F4", "textAlign": "right", "marginBottom": "30px", "marginLeft": "-3em", "fontWeight": "500"}}>
   {`Proyectos`}
 </Heading>
-  <HStack sx={{"width": "300%", "marginLeft": "15em", "marginBottom": "3em"}}>
+  <HStack spacing={`2em`} sx={{"width": "200%", "marginLeft": "9em", "marginBottom": "3em"}}>
   <Box sx={{"width": "200%", "justify": "center", "align": "start"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/cryptoverse-main`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Cryptoverse`}
@@ -394,9 +394,10 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"backgroundColor": "linear-gradient(to right, #e1e1e1, #f9cd45)", "backgroundClip": "text", "width": "200%", "marginLeft": "-6em"}}>
+  <Spacer/>
+  <Box sx={{"backgroundColor": "linear-gradient(to right, #e1e1e1, #f9cd45)", "backgroundClip": "text", "width": "200%"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Sloth-machine-python`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Sloth machine`}
@@ -423,9 +424,10 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "200%", "marginLeft": "-2em"}}>
+  <Spacer/>
+  <Box sx={{"width": "200%"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/to-do-app-DJANGO`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`To do app`}
@@ -453,10 +455,10 @@ export default function Component() {
 </Link>
 </Box>
 </HStack>
-  <HStack sx={{"width": "300%", "marginLeft": "15em", "marginBottom": "7em"}}>
-  <Box sx={{"width": "100%", "justify": "center", "align": "start"}}>
+  <HStack spacing={`2em`} sx={{"width": "200%", "marginLeft": "9em", "marginBottom": "3em"}}>
+  <Box sx={{"width": "200%", "justify": "center", "align": "start"}}>
   <Link as={NextLink} href={`https://adam-password-generator-site.netlify.app`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Password generator`}
@@ -483,9 +485,10 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "100%"}}>
+  <Spacer/>
+  <Box sx={{"width": "200%"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Link_bio`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Portfolio`}
@@ -512,9 +515,10 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "100%", "marginLeft": "-4em"}}>
+  <Spacer/>
+  <Box sx={{"width": "200%", "marginLeft": "-4em"}}>
   <Link as={NextLink} href={`https://booking-example-page.netlify.app/`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Booking`}
@@ -561,7 +565,7 @@ export default function Component() {
 </Box>
   <Box sx={{"display": ["block", "block", "block", "none"]}}>
   <Box sx={{"display": ["block", "none", "none", "none"]}}>
-  <HStack sx={{"position": "fixed", "bg": "#171F26", "backdropFilter": "blur(10px)", "paddingX": "0.5em", "paddingY": "0.5em", "zIndex": "999", "top": "0", "left": "50%", "transform": "translateX(-50%)", "width": "120%", "flexDirection": "column"}}>
+  <HStack sx={{"position": "fixed", "bg": "#171F26", "paddingX": "0.5em", "paddingY": "0.5em", "zIndex": "999", "top": "0", "left": "50%", "transform": "translateX(-50%)", "width": "120%", "flexDirection": "column"}}>
   <Box sx={{"fontFamily": "Comfortaa", "fontSize": "1.5em", "fontWeight": "500"}}>
   <Text as={`span`} sx={{"color": "#14A1F0"}}>
   {`Adam`}
@@ -608,7 +612,7 @@ export default function Component() {
 </HStack>
 </Box>
   <Center id={`header1-section`} ref={ref_header1_section} sx={{"width": "100%", "marginLeft": "5em", "marginTop": "6em"}}>
-  <Box>
+  <Box sx={{"width": "150%", "marginLeft": "1em"}}>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
   <VStack alignItems={`start`} spacing={`1em`} sx={{"marginTop": "3em"}}>
   <HStack>
@@ -785,7 +789,7 @@ export default function Component() {
 </VStack>
   <Box id={`tech1-section`} ref={ref_tech1_section}>
   <VStack>
-  <Box sx={{"width": "115%", "paddingTop": "8em", "marginLeft": "2em", "display": ["block", "block", "block", "none"]}}>
+  <Box sx={{"width": "115%", "paddingTop": "8em", "marginLeft": "3em", "display": ["block", "block", "block", "none"]}}>
   <Heading size={`lg`} sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "1em", "color": "#F1F2F4", "fontWeight": "500"}}>
   {`Tecnologias`}
 </Heading>
@@ -896,15 +900,15 @@ export default function Component() {
 </Box>
   <Box id={`proyectos1-section`} ref={ref_proyectos1_section}>
   <HStack>
-  <Box sx={{"width": "100%", "marginLeft": "1em", "marginBottom": "1em", "display": ["block", "block", "block", "none"]}}>
-  <VStack justify={`center`} sx={{"alignItems": "center", "textAlign": "center", "width": "100%", "margin": "0em", "align": "center", "marginTop": "2em", "marginBottom": "2em", "marginLeft": "0.5em"}}>
-  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "2em", "color": "#F1F2F4", "textAlign": "center", "marginBottom": "0.5em", "marginLeft": "-1.5em", "fontWeight": "500"}}>
+  <Box sx={{"width": "100%", "marginLeft": "-1.5em", "marginRight": "4em", "marginBottom": "1em", "alignItems": "center", "display": ["block", "block", "block", "none"]}}>
+  <VStack justify={`center`} sx={{"width": "110%", "margin": "0em", "align": "center", "marginBottom": "1em", "marginLeft": "0em"}}>
+  <Heading sx={{"fontFamily": "Poppins", "width": "100%", "paddingTop": "3em", "color": "#F1F2F4", "marginLeft": "2em", "textAlign": "center", "marginBottom": "30px", "fontWeight": "500"}}>
   {`Proyectos`}
 </Heading>
-  <HStack>
-  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "center", "marginBottom": "1em"}}>
+  <HStack spacing={`2em`}>
+  <Box sx={{"width": "100%", "margin": "0em", "justify": "left", "align": "left"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/cryptoverse-main`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Cryptoverse`}
@@ -931,9 +935,9 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "center", "marginBottom": "1em"}}>
+  <Box sx={{"width": "100%", "margin": "0em"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Sloth-machine-python`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Sloth machine`}
@@ -961,10 +965,11 @@ export default function Component() {
 </Link>
 </Box>
 </HStack>
-  <HStack>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center", "marginBottom": "1em"}}>
+  <Spacer/>
+  <HStack spacing={`2em`}>
+  <Box sx={{"width": "100%", "margin": "0em", "justify": "left", "align": "left"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/to-do-app-DJANGO`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`To do app`}
@@ -991,9 +996,9 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"alignItems": "center", "textAlign": "center", "width": "75%", "margin": "0em", "justify": "center", "align": "start", "marginBottom": "1em"}}>
+  <Box sx={{"width": "100%", "margin": "0em", "justify": "left", "align": "left"}}>
   <Link as={NextLink} href={`https://adam-password-generator-site.netlify.app`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Password generator`}
@@ -1021,10 +1026,11 @@ export default function Component() {
 </Link>
 </Box>
 </HStack>
-  <HStack>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center"}}>
+  <Spacer/>
+  <HStack spacing={`2em`}>
+  <Box sx={{"width": "100%", "margin": "0em", "justify": "left", "align": "left"}}>
   <Link as={NextLink} href={`https://github.com/mrpowergonz/Link_bio`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Portfolio`}
@@ -1051,9 +1057,9 @@ export default function Component() {
 </Card>
 </Link>
 </Box>
-  <Box sx={{"width": "75%", "justify": "center", "align": "center", "marginLeft": "-4em", "marginBottom": "-5em"}}>
+  <Box sx={{"width": "100%", "margin": "0em", "justify": "left", "align": "left"}}>
   <Link as={NextLink} href={`https://booking-example-page.netlify.app/`} isExternal={true} sx={{"passHref": true, "scroll": "True", "fontWeight": "bold", "text-decoration": "none", "_hover": {}}}>
-  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "70%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
+  <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
   {`Booking`}
@@ -1088,15 +1094,27 @@ export default function Component() {
 </VStack>
 </Box>
 </Center>
-  <VStack sx={{"marginBottom": "0.5em", "paddingBottom": "2em", "paddingX": "0.5em", "color": "#A3ABB2", "paddingLeft": "6em"}}>
+  <VStack sx={{"marginBottom": "0.5em", "paddingX": "0.5em", "color": "#A3ABB2", "marginLeft": "13em"}}>
   <Box sx={{"display": ["block", "none", "none", "none"]}}>
   <Avatar name={`Adam Power`} size={`2xl`} src={`logo.png`} sx={{"color": "#C3C7CB", "bg": "#ffffff", "padding": "2px", "border": "4px", "borderColor": "#14A1F0", "alt": "Logotipo MR.Power. Mi silueta en un diafragma de fotografia"}}/>
-  <Link as={NextLink} href={`https://mrpower.portfoliobox.net/`} isExternal={true} sx={{"fontSize": "0.8em", "fontFamily": "Poppins", "text-decoration": "none", "_hover": {}}}>
-  {`2020-2024 Mr. Power by Adam Power`}
-</Link>
-  <Text sx={{"fontFamily": "Poppins", "marginTop": "0px !important", "fontSize": "0.8em"}}>
-  {` building web pages from Burgos to the world`}
+  <Box sx={{"width": "100%"}}>
+  <Text sx={{"fontFamily": "Poppins", "marginTop": "0.5em", "fontSize": "0.8em"}}>
+  {` building web pages`}
 </Text>
+</Box>
+  <Box sx={{"marginLeft": "1em"}}>
+  <Text sx={{"fontFamily": "Poppins", "marginTop": "0.5em", "fontSize": "0.8em"}}>
+  {`from Burgos to`}
+</Text>
+</Box>
+  <Box sx={{"marginLeft": "2em"}}>
+  <Text sx={{"fontFamily": "Poppins", "marginTop": "0.5em", "fontSize": "0.8em"}}>
+  {`the world`}
+</Text>
+</Box>
+  <Link as={NextLink} href={`https://mrpower.portfoliobox.net/`} isExternal={true} sx={{"fontSize": "0.8em", "fontFamily": "Poppins", "text-decoration": "none", "_hover": {}}}>
+  {`2020-2024 Mr. Power`}
+</Link>
 </Box>
 </VStack>
 </Box>
