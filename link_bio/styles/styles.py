@@ -37,7 +37,7 @@ class Size(Enum):
 BASE_STYLE = {
     "font_family": font.DEFAULT.value,  # Set font family globally
     "font_weight":  FontWeight.LIGHT.value,
-    
+    "scroll_behavior":" smooth" + "!important",
     "background_color": Color.BACKGROUND.value + "!important",
 
     rx.Heading: {

@@ -128,11 +128,25 @@ def header()-> rx.Component:
         ),
                
         rx.text(
-            "Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! ",
+            "Soy Adam Power, un apasionado especialista en desarrollo front-end y páginas web, con experiencia en fotografía. Me enfoco en crear experiencias de usuario excepcionales mediante tecnologías como HTML, CSS, JavaScript y Python, además de dominar frameworks modernos como React, Tailwind y Django. ",
             color=Textcolor.BODY.value,
             font_family= font.DEFAULT.value,
             font_size = Size.MEDIUM1.value,
 
+        ),
+        rx.text(
+         "Graduado en desarrollo de aplicaciones multiplataforma, sigo explorando nuevas tecnologías y creando proyectos. Me interesa especialmente el front-end, la inteligencia artificial, la fotografía, el video y el vuelo con drones. También me apasiona viajar, la música y el mundo de las criptomonedas.",
+        color=Textcolor.BODY.value,
+        font_family= font.DEFAULT.value,
+        font_size = Size.MEDIUM1.value,
+
+        ),
+        rx.text(
+        "He tenido muchas aventuras haciendo voluntariados y viviendo en otros paises. Domino perfectamente el ingles y el español.",
+        color=Textcolor.BODY.value,
+        font_family= font.DEFAULT.value,
+        font_size = Size.MEDIUM1.value,
+        
         ),
             spacing=Size.DEFAULT.value, #Spacing para darle espacio a todos los componentes
             align_items="start",

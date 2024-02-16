@@ -14,11 +14,11 @@ import NextHead from "next/head"
 
 export default function Component() {
   const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
-  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
-  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
-  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
   const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
+  const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
 
   return (
     <Fragment>
@@ -130,7 +130,13 @@ export default function Component() {
 </Box>
 </Flex>
   <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
-  {`Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! `}
+  {`Soy Adam Power, un apasionado especialista en desarrollo front-end y páginas web, con experiencia en fotografía. Me enfoco en crear experiencias de usuario excepcionales mediante tecnologías como HTML, CSS, JavaScript y Python, además de dominar frameworks modernos como React, Tailwind y Django. `}
+</Text>
+  <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
+  {`Graduado en desarrollo de aplicaciones multiplataforma, sigo explorando nuevas tecnologías y creando proyectos. Me interesa especialmente el front-end, la inteligencia artificial, la fotografía, el video y el vuelo con drones. También me apasiona viajar, la música y el mundo de las criptomonedas.`}
+</Text>
+  <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
+  {`He tenido muchas aventuras haciendo voluntariados y viviendo en otros paises. Domino perfectamente el ingles y el español.`}
 </Text>
 </VStack>
   <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
@@ -388,7 +394,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Web page for ranking cryptocurrencies`}
+  {`Pagina web de ranking de criptomonedas`}
 </Heading>
 </CardFooter>
 </Card>
@@ -418,7 +424,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Sloth machine built in Python`}
+  {`Maquina tragaperras echa en Python`}
 </Heading>
 </CardFooter>
 </Card>
@@ -448,7 +454,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Take notes, App built in Django`}
+  {`Toma notas, App echa con Django`}
 </Heading>
 </CardFooter>
 </Card>
@@ -461,7 +467,7 @@ export default function Component() {
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
-  {`Password generator`}
+  {`Generador contraseñas`}
 </Heading>
 </CardHeader>
   <CardBody>
@@ -479,7 +485,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`App built in Javascript, create your own password`}
+  {`Crea tu propia contraseña App echa con Javascript`}
 </Heading>
 </CardFooter>
 </Card>
@@ -509,7 +515,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Personal webpage`}
+  {`Pagina personal con todos mis links`}
 </Heading>
 </CardFooter>
 </Card>
@@ -539,7 +545,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`CSS styles for a booking web page`}
+  {`Estilos de CSS para una pagina estilo booking`}
 </Heading>
 </CardFooter>
 </Card>
@@ -576,17 +582,17 @@ export default function Component() {
 </Box>
   <Box>
   <HStack>
-  <Link as={NextLink} href={`#header1-section`} sx={{"scroll": ["smooth", "#header-section"], "scrollBehavior": "smooth", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`#header1-section`} sx={{"scroll": ["smooth", "#header-section"], "scrollBehavior": "smooth", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.5em", "text-decoration": "none", "_hover": {}}}>
   <Text sx={{"marginLeft": "-2rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Inicio`}
 </Text>
 </Link>
-  <Link as={NextLink} href={`#tech1-section`} sx={{"scroll": "#tech1-section", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`#tech1-section`} sx={{"scroll": "#tech1-section", "p": "2", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.5em", "text-decoration": "none", "_hover": {}}}>
   <Text sx={{"marginLeft": "1rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Tecnologias`}
 </Text>
 </Link>
-  <Link as={NextLink} href={`#proyectos1-section`} sx={{"scroll": "#proyectos1-section", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`#proyectos1-section`} sx={{"scroll": "#proyectos1-section", "p": "2", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.5em", "text-decoration": "none", "_hover": {}}}>
   <Text sx={{"marginLeft": "1rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Proyectos`}
 </Text>
@@ -671,7 +677,13 @@ export default function Component() {
 </Box>
 </Flex>
   <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
-  {`Soy un programador autodidacta que esta intentando aprender todas las ultimas tecnologias. Aqui os dejo todos mis enlaces de interés. Bienvenid@! `}
+  {`Soy Adam Power, un apasionado especialista en desarrollo front-end y páginas web, con experiencia en fotografía. Me enfoco en crear experiencias de usuario excepcionales mediante tecnologías como HTML, CSS, JavaScript y Python, además de dominar frameworks modernos como React, Tailwind y Django. `}
+</Text>
+  <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
+  {`Graduado en desarrollo de aplicaciones multiplataforma, sigo explorando nuevas tecnologías y creando proyectos. Me interesa especialmente el front-end, la inteligencia artificial, la fotografía, el video y el vuelo con drones. También me apasiona viajar, la música y el mundo de las criptomonedas.`}
+</Text>
+  <Text sx={{"color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "0.9em"}}>
+  {`He tenido muchas aventuras haciendo voluntariados y viviendo en otros paises. Domino perfectamente el ingles y el español.`}
 </Text>
 </VStack>
   <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
@@ -929,7 +941,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Web page for ranking cryptocurrencies`}
+  {`Pagina web de ranking de criptomonedas`}
 </Heading>
 </CardFooter>
 </Card>
@@ -958,7 +970,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Sloth machine built in Python`}
+  {`Maquina tragaperras echa en Python`}
 </Heading>
 </CardFooter>
 </Card>
@@ -990,7 +1002,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Take notes, App built in Django`}
+  {`Toma notas, App echa con Django`}
 </Heading>
 </CardFooter>
 </Card>
@@ -1001,7 +1013,7 @@ export default function Component() {
   <Card sx={{"alignItems": "center", "textAlign": "center", "background": "#000c16", "padding": "0em", "borderRadius": "2em", "boxShadow": "0 0 20px #2777bb", "margin": "2em", "_hover": {"transform": "translateY(-10px)", "boxShadow": "0 0 7px #f9cd45", "transition": "all 0.3s ease-in-out"}, "width": "100%", "height": ["13em", "18em", "18em", "18em", "18em"], "direction": "column", "align": "strech", "justify": "center", "transition": "0.5s", "heigh": "3em"}}>
   <CardHeader>
   <Heading sx={{"fontSize": "1.5em", "fontWeight": "900", "color": "#C3C7CB", "fontFamily": "Poppins"}}>
-  {`Password generator`}
+  {`Generador contraseñas`}
 </Heading>
 </CardHeader>
   <CardBody>
@@ -1019,7 +1031,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`App built in Javascript, create your own password`}
+  {`Crea tu propia contraseña App echa con Javascript`}
 </Heading>
 </CardFooter>
 </Card>
@@ -1051,7 +1063,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`Personal webpage`}
+  {`Pagina personal con todos mis links`}
 </Heading>
 </CardFooter>
 </Card>
@@ -1080,7 +1092,7 @@ export default function Component() {
 </CardBody>
   <CardFooter>
   <Heading size={`sm`} sx={{"fontSize": "1em", "color": "#A3ABB2", "fontWeight": "500", "fontFamily": "Poppins"}}>
-  {`CSS styles for a booking web page`}
+  {`Estilos de CSS para una pagina estilo booking`}
 </Heading>
 </CardFooter>
 </Card>

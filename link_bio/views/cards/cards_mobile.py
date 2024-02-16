@@ -28,7 +28,7 @@ def cards_mobile() -> rx.Component:
                     rx.hstack(
                         rx.box(
                             create_card(
-                                "Cryptoverse", "Web page for ranking cryptocurrencies", "github_white.png", "react.png",
+                                "Cryptoverse", "Pagina web de ranking de criptomonedas", "github_white.png", "react.png",
                                 const.GITHUB4_URL),                            
                            width="100%",
                             justify='left',
@@ -38,7 +38,7 @@ def cards_mobile() -> rx.Component:
                         ),
                         rx.box(
                             create_card(
-                                "Sloth machine", "Sloth machine built in Python", "github_white.png", "python.png",
+                                "Sloth machine", "Maquina tragaperras echa en Python", "github_white.png", "python.png",
                                 const.GITHUB1_URL),
                             width="100%",
                             style=styles.style_card_mobile,
@@ -50,7 +50,7 @@ def cards_mobile() -> rx.Component:
                     rx.hstack(
                         rx.box(
                             create_card(
-                                "To do app", "Take notes, App built in Django", "github_white.png", "django.png",
+                                "To do app", "Toma notas, App echa con Django", "github_white.png", "django.png",
                                 const.GITHUB2_URL),
                             
                             width="100%",
@@ -61,7 +61,7 @@ def cards_mobile() -> rx.Component:
                         ),
                         rx.box(
                             create_card(
-                                "Password generator", "App built in Javascript, create your own password", "github_white.png",
+                                "Generador contraseñas", "Crea tu propia contraseña App echa con Javascript", "github_white.png",
                                 "javascript.png",
                                 const.GITHUB3_URL),
                              width="100%",
@@ -78,7 +78,7 @@ def cards_mobile() -> rx.Component:
                     rx.hstack(
                         rx.box(
                             create_card(
-                                "Portfolio", "Personal webpage", "github_white.png", "reflex.png",
+                                "Portfolio", "Pagina personal con todos mis links", "github_white.png", "reflex.png",
                                 const.GITHUB6_URL),
                             width="100%",
                             justify='left',
@@ -87,7 +87,7 @@ def cards_mobile() -> rx.Component:
                         ),
                         rx.box(
                             create_card(
-                                "Booking", "CSS styles for a booking web page", "github_white.png", "css.png",
+                                "Booking", "Estilos de CSS para una pagina estilo booking", "github_white.png", "css.png",
                                 const.GITHUB5_URL),
                             
                              width="100%",
