@@ -59,6 +59,7 @@ def navbar() -> rx.Component:
                             ),
                     href="#proyectos-section",
                     scroll="#proyectos-section",
+                    scroll_behavior= "smooth" + "!important",
                     p="1",
                     color=Textcolor.BODY.value,
                     font_family=font.DEFAULT.value,

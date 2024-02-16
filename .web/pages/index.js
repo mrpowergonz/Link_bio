@@ -13,11 +13,11 @@ import NextHead from "next/head"
 
 
 export default function Component() {
-  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
-  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
-  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
   const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
+  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
+  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
   const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
 
   return (
@@ -47,7 +47,7 @@ export default function Component() {
   {`Tecnologias`}
 </Text>
 </Link>
-  <Link as={NextLink} href={`#proyectos-section`} sx={{"scroll": "#proyectos-section", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`#proyectos-section`} sx={{"scroll": "#proyectos-section", "scrollBehavior": "smooth!important", "p": "1", "color": "#C3C7CB", "fontFamily": "Poppins", "fontSize": "1.2em", "text-decoration": "none", "_hover": {}}}>
   <Text sx={{"marginLeft": "1rem", "_hover": {"cursor": "pointer", "transform": "scale(1.05)"}}}>
   {`Proyectos`}
 </Text>
