@@ -13,12 +13,12 @@ import NextHead from "next/head"
 
 
 export default function Component() {
-  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
-  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
   const ref_header_section = useRef(null); refs['ref_header_section'] = ref_header_section;
-  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
   const ref_tech1_section = useRef(null); refs['ref_tech1_section'] = ref_tech1_section;
+  const ref_proyectos1_section = useRef(null); refs['ref_proyectos1_section'] = ref_proyectos1_section;
   const ref_proyectos_section = useRef(null); refs['ref_proyectos_section'] = ref_proyectos_section;
+  const ref_tech_section = useRef(null); refs['ref_tech_section'] = ref_tech_section;
+  const ref_header1_section = useRef(null); refs['ref_header1_section'] = ref_header1_section;
 
   return (
     <Fragment>
